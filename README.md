@@ -30,6 +30,7 @@ This also can be used as a protoype for another cpu or system or even generate w
 Todo:  
 To improve, fix more issues and bugs, and a autoconf version  
 Make example how to add some cpu and / or generate wasm assembly  
+Generate compiler graph data to be used with gnl4gtk graph viewer  
   
 ![screenshot](gnufsf.png)  
   
