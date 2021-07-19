@@ -1,0 +1,1492 @@
+:)
+gcc -g  -c gcc.c
+gcc.c: In function ‘execute’:
+gcc.c:519:7: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+       (char *) (status & 0x7F));
+       ^
+In file included from gcc.c:124:
+gcc.c: In function ‘do_spec_1’:
+obstack.h:317:7: warning: implicit declaration of function ‘_obstack_newchunk’; did you mean ‘obstack_blank’? [-Wimplicit-function-declaration]
+     ? _obstack_newchunk (__o, 1) : 0),     \
+       ^~~~~~~~~~~~~~~~~
+gcc.c:756:8: note: in expansion of macro ‘obstack_1grow’
+        obstack_1grow (&obstack, 0);
+        ^~~~~~~~~~~~~
+obstack.h:348:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+      = (char*)((int)(__o->next_free+__o->alignment_mask)  \
+                ^
+gcc.c:757:17: note: in expansion of macro ‘obstack_finish’
+        string = obstack_finish (&obstack);
+                 ^~~~~~~~~~~~~~
+obstack.h:348:8: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+      = (char*)((int)(__o->next_free+__o->alignment_mask)  \
+        ^
+gcc.c:757:17: note: in expansion of macro ‘obstack_finish’
+        string = obstack_finish (&obstack);
+                 ^~~~~~~~~~~~~~
+obstack.h:348:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+      = (char*)((int)(__o->next_free+__o->alignment_mask)  \
+                ^
+gcc.c:791:17: note: in expansion of macro ‘obstack_finish’
+        string = obstack_finish (&obstack);
+                 ^~~~~~~~~~~~~~
+obstack.h:348:8: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+      = (char*)((int)(__o->next_free+__o->alignment_mask)  \
+        ^
+gcc.c:791:17: note: in expansion of macro ‘obstack_finish’
+        string = obstack_finish (&obstack);
+                 ^~~~~~~~~~~~~~
+gcc.c: In function ‘main’:
+obstack.h:272:3: warning: implicit declaration of function ‘_obstack_begin’; did you mean ‘obstack_begin’? [-Wimplicit-function-declaration]
+   _obstack_begin ((h), 4096 - 4, 0, obstack_chunk_alloc, obstack_chunk_free)
+   ^~~~~~~~~~~~~~
+gcc.c:1170:3: note: in expansion of macro ‘obstack_init’
+   obstack_init (&obstack);
+   ^~~~~~~~~~~~
+gcc -g    -c -o obstack.o obstack.c
+obstack.c: In function ‘_obstack_begin’:
+obstack.c:122:28: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ #define DEFAULT_ALIGNMENT ((int) &(((struct fooalign *) 0)->d))
+                            ^
+obstack.c:146:19: note: in expansion of macro ‘DEFAULT_ALIGNMENT’
+       alignment = DEFAULT_ALIGNMENT;
+                   ^~~~~~~~~~~~~~~~~
+In file included from obstack.c:108:
+obstack.c: In function ‘obstack_finish’:
+obstack.h:348:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+      = (char*)((int)(__o->next_free+__o->alignment_mask)  \
+                ^
+obstack.c:318:10: note: in expansion of macro ‘obstack_finish’
+   return obstack_finish (obstack);
+          ^~~~~~~~~~~~~~
+obstack.h:348:8: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+      = (char*)((int)(__o->next_free+__o->alignment_mask)  \
+        ^
+obstack.c:318:10: note: in expansion of macro ‘obstack_finish’
+   return obstack_finish (obstack);
+          ^~~~~~~~~~~~~~
+obstack.c: In function ‘obstack_alloc’:
+obstack.h:348:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+      = (char*)((int)(__o->next_free+__o->alignment_mask)  \
+                ^
+obstack.h:332:4: note: in expansion of macro ‘obstack_finish’
+    obstack_finish (__h); })
+    ^~~~~~~~~~~~~~
+obstack.c:325:10: note: in expansion of macro ‘obstack_alloc’
+   return obstack_alloc (obstack, length);
+          ^~~~~~~~~~~~~
+obstack.h:348:8: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+      = (char*)((int)(__o->next_free+__o->alignment_mask)  \
+        ^
+obstack.h:332:4: note: in expansion of macro ‘obstack_finish’
+    obstack_finish (__h); })
+    ^~~~~~~~~~~~~~
+obstack.c:325:10: note: in expansion of macro ‘obstack_alloc’
+   return obstack_alloc (obstack, length);
+          ^~~~~~~~~~~~~
+obstack.c: In function ‘obstack_copy’:
+obstack.h:348:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+      = (char*)((int)(__o->next_free+__o->alignment_mask)  \
+                ^
+obstack.h:337:4: note: in expansion of macro ‘obstack_finish’
+    obstack_finish (__h); })
+    ^~~~~~~~~~~~~~
+obstack.c:333:10: note: in expansion of macro ‘obstack_copy’
+   return obstack_copy (obstack, pointer, length);
+          ^~~~~~~~~~~~
+obstack.h:348:8: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+      = (char*)((int)(__o->next_free+__o->alignment_mask)  \
+        ^
+obstack.h:337:4: note: in expansion of macro ‘obstack_finish’
+    obstack_finish (__h); })
+    ^~~~~~~~~~~~~~
+obstack.c:333:10: note: in expansion of macro ‘obstack_copy’
+   return obstack_copy (obstack, pointer, length);
+          ^~~~~~~~~~~~
+obstack.c: In function ‘obstack_copy0’:
+obstack.h:348:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+      = (char*)((int)(__o->next_free+__o->alignment_mask)  \
+                ^
+obstack.h:342:4: note: in expansion of macro ‘obstack_finish’
+    obstack_finish (__h); })
+    ^~~~~~~~~~~~~~
+obstack.c:341:10: note: in expansion of macro ‘obstack_copy0’
+   return obstack_copy0 (obstack, pointer, length);
+          ^~~~~~~~~~~~~
+obstack.h:348:8: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+      = (char*)((int)(__o->next_free+__o->alignment_mask)  \
+        ^
+obstack.h:342:4: note: in expansion of macro ‘obstack_finish’
+    obstack_finish (__h); })
+    ^~~~~~~~~~~~~~
+obstack.c:341:10: note: in expansion of macro ‘obstack_copy0’
+   return obstack_copy0 (obstack, pointer, length);
+          ^~~~~~~~~~~~~
+gcc -g  -o gccnew gcc.o obstack.o 
+/usr/bin/ld: gcc.o: in function `pfatal_with_name':
+/home/gold/misc/src/d/d/gcc/gcc.c:1365: warning: `sys_nerr' is deprecated; use `strerror' or `strerror_r' instead
+/usr/bin/ld: gcc.o: in function `choose_temp_base':
+/home/gold/misc/src/d/d/gcc/gcc.c:332: warning: the use of `mktemp' is dangerous, better use `mkstemp' or `mkdtemp'
+mv gccnew gcc
+gcc -g    -c -o toplev.o toplev.c
+toplev.c: In function ‘botch’:
+toplev.c:576:1: warning: type of ‘s’ defaults to ‘int’ [-Wimplicit-int]
+ botch (s)
+ ^~~~~
+toplev.c: In function ‘xmalloc’:
+toplev.c:587:24: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+   register int value = (int) malloc (size);
+                        ^
+toplev.c: In function ‘xrealloc’:
+toplev.c:602:16: warning: initialization of ‘int’ from ‘void *’ makes integer from pointer without a cast [-Wint-conversion]
+   int result = realloc (ptr, size);
+                ^~~~~~~
+toplev.c: In function ‘compile_file’:
+toplev.c:654:31: warning: implicit declaration of function ‘strlen’ [-Wimplicit-function-declaration]
+   int dump_base_name_length = strlen (dump_base_name);
+                               ^~~~~~
+toplev.c:654:31: warning: incompatible implicit declaration of built-in function ‘strlen’
+toplev.c:654:31: note: include ‘<string.h>’ or provide a declaration of ‘strlen’
+toplev.c:53:1:
++#include <string.h>
+ 
+toplev.c:654:31:
+   int dump_base_name_length = strlen (dump_base_name);
+                               ^~~~~~
+toplev.c:679:3: warning: implicit declaration of function ‘init_emit_once’; did you mean ‘init_tree’? [-Wimplicit-function-declaration]
+   init_emit_once ();
+   ^~~~~~~~~~~~~~
+   init_tree
+toplev.c:685:33: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+       register char *dumpname = (char *) xmalloc (dump_base_name_length + 6);
+                                 ^
+toplev.c:686:7: warning: implicit declaration of function ‘strcpy’ [-Wimplicit-function-declaration]
+       strcpy (dumpname, dump_base_name);
+       ^~~~~~
+toplev.c:686:7: warning: incompatible implicit declaration of built-in function ‘strcpy’
+toplev.c:686:7: note: include ‘<string.h>’ or provide a declaration of ‘strcpy’
+toplev.c:687:7: warning: implicit declaration of function ‘strcat’ [-Wimplicit-function-declaration]
+       strcat (dumpname, ".rtl");
+       ^~~~~~
+toplev.c:687:7: warning: incompatible implicit declaration of built-in function ‘strcat’
+toplev.c:687:7: note: include ‘<string.h>’ or provide a declaration of ‘strcat’
+toplev.c:698:33: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+       register char *dumpname = (char *) xmalloc (dump_base_name_length + 6);
+                                 ^
+toplev.c:699:7: warning: incompatible implicit declaration of built-in function ‘strcpy’
+       strcpy (dumpname, dump_base_name);
+       ^~~~~~
+toplev.c:699:7: note: include ‘<string.h>’ or provide a declaration of ‘strcpy’
+toplev.c:700:7: warning: incompatible implicit declaration of built-in function ‘strcat’
+       strcat (dumpname, ".jump");
+       ^~~~~~
+toplev.c:700:7: note: include ‘<string.h>’ or provide a declaration of ‘strcat’
+toplev.c:711:33: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+       register char *dumpname = (char *) xmalloc (dump_base_name_length + 6);
+                                 ^
+toplev.c:712:7: warning: incompatible implicit declaration of built-in function ‘strcpy’
+       strcpy (dumpname, dump_base_name);
+       ^~~~~~
+toplev.c:712:7: note: include ‘<string.h>’ or provide a declaration of ‘strcpy’
+toplev.c:713:7: warning: incompatible implicit declaration of built-in function ‘strcat’
+       strcat (dumpname, ".cse");
+       ^~~~~~
+toplev.c:713:7: note: include ‘<string.h>’ or provide a declaration of ‘strcat’
+toplev.c:724:33: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+       register char *dumpname = (char *) xmalloc (dump_base_name_length + 6);
+                                 ^
+toplev.c:725:7: warning: incompatible implicit declaration of built-in function ‘strcpy’
+       strcpy (dumpname, dump_base_name);
+       ^~~~~~
+toplev.c:725:7: note: include ‘<string.h>’ or provide a declaration of ‘strcpy’
+toplev.c:726:7: warning: incompatible implicit declaration of built-in function ‘strcat’
+       strcat (dumpname, ".loop");
+       ^~~~~~
+toplev.c:726:7: note: include ‘<string.h>’ or provide a declaration of ‘strcat’
+toplev.c:737:33: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+       register char *dumpname = (char *) xmalloc (dump_base_name_length + 6);
+                                 ^
+toplev.c:738:7: warning: incompatible implicit declaration of built-in function ‘strcpy’
+       strcpy (dumpname, dump_base_name);
+       ^~~~~~
+toplev.c:738:7: note: include ‘<string.h>’ or provide a declaration of ‘strcpy’
+toplev.c:739:7: warning: incompatible implicit declaration of built-in function ‘strcat’
+       strcat (dumpname, ".flow");
+       ^~~~~~
+toplev.c:739:7: note: include ‘<string.h>’ or provide a declaration of ‘strcat’
+toplev.c:750:33: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+       register char *dumpname = (char *) xmalloc (dump_base_name_length + 10);
+                                 ^
+toplev.c:751:7: warning: incompatible implicit declaration of built-in function ‘strcpy’
+       strcpy (dumpname, dump_base_name);
+       ^~~~~~
+toplev.c:751:7: note: include ‘<string.h>’ or provide a declaration of ‘strcpy’
+toplev.c:752:7: warning: incompatible implicit declaration of built-in function ‘strcat’
+       strcat (dumpname, ".combine");
+       ^~~~~~
+toplev.c:752:7: note: include ‘<string.h>’ or provide a declaration of ‘strcat’
+toplev.c:763:33: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+       register char *dumpname = (char *) xmalloc (dump_base_name_length + 6);
+                                 ^
+toplev.c:764:7: warning: incompatible implicit declaration of built-in function ‘strcpy’
+       strcpy (dumpname, dump_base_name);
+       ^~~~~~
+toplev.c:764:7: note: include ‘<string.h>’ or provide a declaration of ‘strcpy’
+toplev.c:765:7: warning: incompatible implicit declaration of built-in function ‘strcat’
+       strcat (dumpname, ".lreg");
+       ^~~~~~
+toplev.c:765:7: note: include ‘<string.h>’ or provide a declaration of ‘strcat’
+toplev.c:776:33: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+       register char *dumpname = (char *) xmalloc (dump_base_name_length + 6);
+                                 ^
+toplev.c:777:7: warning: incompatible implicit declaration of built-in function ‘strcpy’
+       strcpy (dumpname, dump_base_name);
+       ^~~~~~
+toplev.c:777:7: note: include ‘<string.h>’ or provide a declaration of ‘strcpy’
+toplev.c:778:7: warning: incompatible implicit declaration of built-in function ‘strcat’
+       strcat (dumpname, ".greg");
+       ^~~~~~
+toplev.c:778:7: note: include ‘<string.h>’ or provide a declaration of ‘strcat’
+toplev.c:789:33: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+       register char *dumpname = (char *) xmalloc (dump_base_name_length + 7);
+                                 ^
+toplev.c:790:7: warning: incompatible implicit declaration of built-in function ‘strcpy’
+       strcpy (dumpname, dump_base_name);
+       ^~~~~~
+toplev.c:790:7: note: include ‘<string.h>’ or provide a declaration of ‘strcpy’
+toplev.c:791:7: warning: incompatible implicit declaration of built-in function ‘strcat’
+       strcat (dumpname, ".jump2");
+       ^~~~~~
+toplev.c:791:7: note: include ‘<string.h>’ or provide a declaration of ‘strcat’
+toplev.c:802:31: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     register char *dumpname = (char *) xmalloc (dump_base_name_length + 6);
+                               ^
+toplev.c:804:5: warning: incompatible implicit declaration of built-in function ‘strcpy’
+     strcpy (dumpname, dump_base_name);
+     ^~~~~~
+toplev.c:804:5: note: include ‘<string.h>’ or provide a declaration of ‘strcpy’
+toplev.c:805:21: warning: implicit declaration of function ‘strcmp’ [-Wimplicit-function-declaration]
+     if (len > 2 && !strcmp (".c", dumpname + len - 2))
+                     ^~~~~~
+toplev.c:813:5: warning: incompatible implicit declaration of built-in function ‘strcat’
+     strcat (dumpname, ".s");
+     ^~~~~~
+toplev.c:813:5: note: include ‘<string.h>’ or provide a declaration of ‘strcat’
+toplev.c:831:3: warning: implicit declaration of function ‘check_newline’ [-Wimplicit-function-declaration]
+   check_newline ();
+   ^~~~~~~~~~~~~
+toplev.c:835:33: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+       register char *dumpname = (char *) xmalloc (dump_base_name_length + 6);
+                                 ^
+toplev.c:837:7: warning: incompatible implicit declaration of built-in function ‘strcpy’
+       strcpy (dumpname, dump_base_name);
+       ^~~~~~
+toplev.c:837:7: note: include ‘<string.h>’ or provide a declaration of ‘strcpy’
+toplev.c:846:7: warning: incompatible implicit declaration of built-in function ‘strcat’
+       strcat (dumpname, ".sym");
+       ^~~~~~
+toplev.c:846:7: note: include ‘<string.h>’ or provide a declaration of ‘strcat’
+toplev.c:851:7: warning: implicit declaration of function ‘symout_init’; did you mean ‘digest_init’? [-Wimplicit-function-declaration]
+       symout_init (sym_file_name, asm_out_file, input_filename);
+       ^~~~~~~~~~~
+       digest_init
+toplev.c:858:7: warning: implicit declaration of function ‘dbxout_init’; did you mean ‘digest_init’? [-Wimplicit-function-declaration]
+       dbxout_init (asm_out_file, main_input_filename);
+       ^~~~~~~~~~~
+       digest_init
+toplev.c:862:3: warning: implicit declaration of function ‘init_final’; did you mean ‘init_rtl’? [-Wimplicit-function-declaration]
+   init_final (main_input_filename);
+   ^~~~~~~~~~
+   init_rtl
+toplev.c:866:3: warning: implicit declaration of function ‘yyparse’ [-Wimplicit-function-declaration]
+   yyparse ();
+   ^~~~~~~
+toplev.c:888:6: warning: implicit declaration of function ‘output_inline_function’; did you mean ‘announce_function’? [-Wimplicit-function-declaration]
+      output_inline_function (decl);
+      ^~~~~~~~~~~~~~~~~~~~~~
+      announce_function
+toplev.c:897:7: warning: implicit declaration of function ‘dbxout_tags’ [-Wimplicit-function-declaration]
+       dbxout_tags (gettags ()); dbxout_types (get_permanent_types ());
+       ^~~~~~~~~~~
+toplev.c:323:28: note: in definition of macro ‘TIMEVAR’
+  { int otime = gettime (); BODY; VAR += gettime () - otime; }
+                            ^~~~
+toplev.c:897:33: warning: implicit declaration of function ‘dbxout_types’; did you mean ‘layout_type’? [-Wimplicit-function-declaration]
+       dbxout_tags (gettags ()); dbxout_types (get_permanent_types ());
+                                 ^~~~~~~~~~~~
+toplev.c:323:28: note: in definition of macro ‘TIMEVAR’
+  { int otime = gettime (); BODY; VAR += gettime () - otime; }
+                            ^~~~
+toplev.c:897:47: warning: implicit declaration of function ‘get_permanent_types’; did you mean ‘get_parm_types’? [-Wimplicit-function-declaration]
+       dbxout_tags (gettags ()); dbxout_types (get_permanent_types ());
+                                               ^~~~~~~~~~~~~~~~~~~
+toplev.c:323:28: note: in definition of macro ‘TIMEVAR’
+  { int otime = gettime (); BODY; VAR += gettime () - otime; }
+                            ^~~~
+toplev.c:907:7: warning: implicit declaration of function ‘symout_types’; did you mean ‘layout_type’? [-Wimplicit-function-declaration]
+       symout_types
+       ^~~~~~~~~~~~
+toplev.c:323:28: note: in definition of macro ‘TIMEVAR’
+  { int otime = gettime (); BODY; VAR += gettime () - otime; }
+                            ^~~~
+toplev.c:909:7: warning: implicit declaration of function ‘symout_top_blocks’ [-Wimplicit-function-declaration]
+       symout_top_blocks (globals, gettags ());
+       ^~~~~~~~~~~~~~~~~
+toplev.c:323:28: note: in definition of macro ‘TIMEVAR’
+  { int otime = gettime (); BODY; VAR += gettime () - otime; }
+                            ^~~~
+toplev.c:910:7: warning: implicit declaration of function ‘symout_finish’ [-Wimplicit-function-declaration]
+       symout_finish (name, statbuf.st_ctime);
+       ^~~~~~~~~~~~~
+toplev.c:323:28: note: in definition of macro ‘TIMEVAR’
+  { int otime = gettime (); BODY; VAR += gettime () - otime; }
+                            ^~~~
+toplev.c:936:7: warning: implicit declaration of function ‘dump_combine_total_stats’ [-Wimplicit-function-declaration]
+       dump_combine_total_stats (combine_dump_file);
+       ^~~~~~~~~~~~~~~~~~~~~~~~
+toplev.c: In function ‘rest_of_decl_compilation’:
+toplev.c:999:7: warning: implicit declaration of function ‘assemble_variable’ [-Wimplicit-function-declaration]
+       assemble_variable (decl, asmspec, top_level,
+       ^~~~~~~~~~~~~~~~~
+toplev.c:323:28: note: in definition of macro ‘TIMEVAR’
+  { int otime = gettime (); BODY; VAR += gettime () - otime; }
+                            ^~~~
+toplev.c:1012:20: warning: implicit declaration of function ‘get_temporary_types’; did you mean ‘get_parm_types’? [-Wimplicit-function-declaration]
+      symout_types (get_temporary_types ());
+                    ^~~~~~~~~~~~~~~~~~~
+toplev.c:323:28: note: in definition of macro ‘TIMEVAR’
+  { int otime = gettime (); BODY; VAR += gettime () - otime; }
+                            ^~~~
+toplev.c: In function ‘rest_of_compilation’:
+toplev.c:1052:21: warning: implicit declaration of function ‘save_for_inline’; did you mean ‘type_for_size’? [-Wimplicit-function-declaration]
+      if (lose == 0) save_for_inline (decl);
+                     ^~~~~~~~~~~~~~~
+toplev.c:323:28: note: in definition of macro ‘TIMEVAR’
+  { int otime = gettime (); BODY; VAR += gettime () - otime; }
+                            ^~~~
+toplev.c:1070:4: warning: implicit declaration of function ‘print_rtl’; did you mean ‘init_rtl’? [-Wimplicit-function-declaration]
+    print_rtl (rtl_dump_file, insns); fflush (rtl_dump_file);}
+    ^~~~~~~~~
+toplev.c:323:28: note: in definition of macro ‘TIMEVAR’
+  { int otime = gettime (); BODY; VAR += gettime () - otime; }
+                            ^~~~
+toplev.c:1090:3: warning: implicit declaration of function ‘unshare_all_rtl’ [-Wimplicit-function-declaration]
+   unshare_all_rtl (insns);
+   ^~~~~~~~~~~~~~~
+toplev.c:1100:27: warning: implicit declaration of function ‘jump_optimize’ [-Wimplicit-function-declaration]
+       TIMEVAR (jump_time, jump_optimize (insns, 0, 0));
+                           ^~~~~~~~~~~~~
+toplev.c:323:28: note: in definition of macro ‘TIMEVAR’
+  { int otime = gettime (); BODY; VAR += gettime () - otime; }
+                            ^~~~
+toplev.c:1120:26: warning: implicit declaration of function ‘reg_scan’ [-Wimplicit-function-declaration]
+       TIMEVAR (cse_time, reg_scan (insns, max_reg_num (), 0));
+                          ^~~~~~~~
+toplev.c:323:28: note: in definition of macro ‘TIMEVAR’
+  { int otime = gettime (); BODY; VAR += gettime () - otime; }
+                            ^~~~
+toplev.c:1120:43: warning: implicit declaration of function ‘max_reg_num’ [-Wimplicit-function-declaration]
+       TIMEVAR (cse_time, reg_scan (insns, max_reg_num (), 0));
+                                           ^~~~~~~~~~~
+toplev.c:323:28: note: in definition of macro ‘TIMEVAR’
+  { int otime = gettime (); BODY; VAR += gettime () - otime; }
+                            ^~~~
+toplev.c:1121:32: warning: implicit declaration of function ‘cse_main’; did you mean ‘ctermid’? [-Wimplicit-function-declaration]
+       TIMEVAR (cse_time, tem = cse_main (insns, max_reg_num ()));
+                                ^~~~~~~~
+toplev.c:323:28: note: in definition of macro ‘TIMEVAR’
+  { int otime = gettime (); BODY; VAR += gettime () - otime; }
+                            ^~~~
+toplev.c:1156:9: warning: implicit declaration of function ‘loop_optimize’ [-Wimplicit-function-declaration]
+         loop_optimize (insns, max_reg_num (),
+         ^~~~~~~~~~~~~
+toplev.c:323:28: note: in definition of macro ‘TIMEVAR’
+  { int otime = gettime (); BODY; VAR += gettime () - otime; }
+                            ^~~~
+toplev.c:1175:3: warning: implicit declaration of function ‘regclass_init’; did you mean ‘get_last_insn’? [-Wimplicit-function-declaration]
+   regclass_init ();
+   ^~~~~~~~~~~~~
+   get_last_insn
+toplev.c:1190:9: warning: implicit declaration of function ‘regclass’; did you mean ‘tree_last’? [-Wimplicit-function-declaration]
+         regclass (insns, max_reg_num ());
+         ^~~~~~~~
+toplev.c:323:28: note: in definition of macro ‘TIMEVAR’
+  { int otime = gettime (); BODY; VAR += gettime () - otime; }
+                            ^~~~
+toplev.c:1191:9: warning: implicit declaration of function ‘stupid_life_analysis’ [-Wimplicit-function-declaration]
+         stupid_life_analysis (insns, max_reg_num (), flow_dump_file);
+         ^~~~~~~~~~~~~~~~~~~~
+toplev.c:323:28: note: in definition of macro ‘TIMEVAR’
+  { int otime = gettime (); BODY; VAR += gettime () - otime; }
+                            ^~~~
+toplev.c:1200:27: warning: implicit declaration of function ‘flow_analysis’ [-Wimplicit-function-declaration]
+       TIMEVAR (flow_time, flow_analysis (insns, max_reg_num (),
+                           ^~~~~~~~~~~~~
+toplev.c:323:28: note: in definition of macro ‘TIMEVAR’
+  { int otime = gettime (); BODY; VAR += gettime () - otime; }
+                            ^~~~
+toplev.c:1203:2: warning: implicit declaration of function ‘uninitialized_vars_warning’ [-Wimplicit-function-declaration]
+  uninitialized_vars_warning (DECL_INITIAL (decl));
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+toplev.c:1216:28: warning: implicit declaration of function ‘combine_instructions’ [-Wimplicit-function-declaration]
+     TIMEVAR (combine_time, combine_instructions (insns, max_reg_num ()));
+                            ^~~~~~~~~~~~~~~~~~~~
+toplev.c:323:28: note: in definition of macro ‘TIMEVAR’
+  { int otime = gettime (); BODY; VAR += gettime () - otime; }
+                            ^~~~
+toplev.c:1225:7: warning: implicit declaration of function ‘dump_combine_stats’ [-Wimplicit-function-declaration]
+       dump_combine_stats (combine_dump_file);
+       ^~~~~~~~~~~~~~~~~~
+toplev.c:323:28: note: in definition of macro ‘TIMEVAR’
+  { int otime = gettime (); BODY; VAR += gettime () - otime; }
+                            ^~~~
+toplev.c:1234:41: warning: implicit declaration of function ‘local_alloc’; did you mean ‘dump_local_alloc’? [-Wimplicit-function-declaration]
+       regclass (insns, max_reg_num ()); local_alloc ();
+                                         ^~~~~~~~~~~
+toplev.c:323:28: note: in definition of macro ‘TIMEVAR’
+  { int otime = gettime (); BODY; VAR += gettime () - otime; }
+                            ^~~~
+toplev.c:1262:5: warning: implicit declaration of function ‘global_alloc’; did you mean ‘oballoc’? [-Wimplicit-function-declaration]
+     global_alloc (global_reg_dump ? global_reg_dump_file : 0);
+     ^~~~~~~~~~~~
+toplev.c:323:28: note: in definition of macro ‘TIMEVAR’
+  { int otime = gettime (); BODY; VAR += gettime () - otime; }
+                            ^~~~
+toplev.c:1264:5: warning: implicit declaration of function ‘reload’; did you mean ‘rewind’? [-Wimplicit-function-declaration]
+     reload (insns, 0, global_reg_dump ? global_reg_dump_file : 0);}
+     ^~~~~~
+toplev.c:323:28: note: in definition of macro ‘TIMEVAR’
+  { int otime = gettime (); BODY; VAR += gettime () - otime; }
+                            ^~~~
+toplev.c:1269:7: warning: implicit declaration of function ‘dump_global_regs’; did you mean ‘dump_local_alloc’? [-Wimplicit-function-declaration]
+       dump_global_regs (global_reg_dump_file);
+       ^~~~~~~~~~~~~~~~
+toplev.c:323:28: note: in definition of macro ‘TIMEVAR’
+  { int otime = gettime (); BODY; VAR += gettime () - otime; }
+                            ^~~~
+toplev.c:1299:5: warning: implicit declaration of function ‘assemble_function’; did you mean ‘announce_function’? [-Wimplicit-function-declaration]
+     assemble_function (decl);
+     ^~~~~~~~~~~~~~~~~
+toplev.c:323:28: note: in definition of macro ‘TIMEVAR’
+  { int otime = gettime (); BODY; VAR += gettime () - otime; }
+                            ^~~~
+toplev.c:1300:5: warning: implicit declaration of function ‘final_start_function’; did you mean ‘expand_start_function’? [-Wimplicit-function-declaration]
+     final_start_function (insns, asm_out_file,
+     ^~~~~~~~~~~~~~~~~~~~
+toplev.c:323:28: note: in definition of macro ‘TIMEVAR’
+  { int otime = gettime (); BODY; VAR += gettime () - otime; }
+                            ^~~~
+toplev.c:1302:5: warning: implicit declaration of function ‘final’; did you mean ‘fatal’? [-Wimplicit-function-declaration]
+     final (insns, asm_out_file,
+     ^~~~~
+toplev.c:323:28: note: in definition of macro ‘TIMEVAR’
+  { int otime = gettime (); BODY; VAR += gettime () - otime; }
+                            ^~~~
+toplev.c:1304:5: warning: implicit declaration of function ‘final_end_function’; did you mean ‘expand_end_function’? [-Wimplicit-function-declaration]
+     final_end_function (insns, asm_out_file,
+     ^~~~~~~~~~~~~~~~~~
+toplev.c:323:28: note: in definition of macro ‘TIMEVAR’
+  { int otime = gettime (); BODY; VAR += gettime () - otime; }
+                            ^~~~
+toplev.c:1317:11: warning: implicit declaration of function ‘symout_function’; did you mean ‘start_function’? [-Wimplicit-function-declaration]
+         = symout_function (DECL_INITIAL (decl),
+           ^~~~~~~~~~~~~~~
+toplev.c:323:28: note: in definition of macro ‘TIMEVAR’
+  { int otime = gettime (); BODY; VAR += gettime () - otime; }
+                            ^~~~
+toplev.c:1326:27: warning: implicit declaration of function ‘dbxout_function’; did you mean ‘start_function’? [-Wimplicit-function-declaration]
+     TIMEVAR (symout_time, dbxout_function (decl));
+                           ^~~~~~~~~~~~~~~
+toplev.c:323:28: note: in definition of macro ‘TIMEVAR’
+  { int otime = gettime (); BODY; VAR += gettime () - otime; }
+                            ^~~~
+toplev.c: In function ‘main’:
+toplev.c:1499:18: warning: implicit declaration of function ‘strncmp’ [-Wimplicit-function-declaration]
+        else if (!strncmp (p, "fixed-", 6))
+                  ^~~~~~~
+toplev.c:1501:5: warning: implicit declaration of function ‘fix_register’; did you mean ‘find_reg_note’? [-Wimplicit-function-declaration]
+     fix_register (&p[6], 1, 1);
+     ^~~~~~~~~~~~
+     find_reg_note
+toplev.c:1632:31: warning: implicit declaration of function ‘sbrk’ [-Wimplicit-function-declaration]
+       caddr_t lim = (caddr_t) sbrk (0);
+                               ^~~~
+toplev.c:1632:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+       caddr_t lim = (caddr_t) sbrk (0);
+                     ^
+toplev.c:1633:43: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+       fprintf (stderr, "Data size %d.\n", (int) lim - (int) &environ);
+                                           ^
+toplev.c:1633:55: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+       fprintf (stderr, "Data size %d.\n", (int) lim - (int) &environ);
+                                                       ^
+gcc -g    -c -o version.o version.c
+gcc -g    -c -o parse.tab.o parse.tab.c
+bison.simple: In function ‘yyparse’:
+bison.simple:175:24: warning: implicit declaration of function ‘alloca’ [-Wimplicit-function-declaration]
+bison.simple:175:24: warning: incompatible implicit declaration of built-in function ‘alloca’
+bison.simple:176:7: warning: implicit declaration of function ‘bcopy’ [-Wimplicit-function-declaration]
+bison.simple:176:7: warning: incompatible implicit declaration of built-in function ‘bcopy’
+bison.simple:117:16: warning: implicit declaration of function ‘yylex’ [-Wimplicit-function-declaration]
+bison.simple:214:16: note: in expansion of macro ‘YYLEX’
+parse.y:181:7: warning: implicit declaration of function ‘warning’ [-Wimplicit-function-declaration]
+   { if (pedantic)
+       ^~~~~~~
+parse.y:183:5: warning: implicit declaration of function ‘assemble_asm’ [-Wimplicit-function-declaration]
+     if (TREE_CHAIN ($3)) $3 = combine_strings ($3);
+     ^~~~~~~~~~~~
+parse.y:189:7: warning: implicit declaration of function ‘error’; did you mean ‘perror’? [-Wimplicit-function-declaration]
+   { if (pedantic)
+       ^~~~~
+       perror
+parse.y:199:3: warning: implicit declaration of function ‘shadow_tag’ [-Wimplicit-function-declaration]
+  | typed_declspecs ';'
+   ^~~~~~~~~~
+parse.y:292:23: warning: implicit declaration of function ‘complete_array_type’; did you mean ‘build_array_type’? [-Wimplicit-function-declaration]
+       {
+                       ^                  
+                       build_array_type
+parse.y:294:4: warning: implicit declaration of function ‘abort’ [-Wimplicit-function-declaration]
+         if (failure)
+    ^    
+parse.y:294:4: warning: incompatible implicit declaration of built-in function ‘abort’
+parse.y:294:4: note: include ‘<stdlib.h>’ or provide a declaration of ‘abort’
+parse.y:286:1:
++#include <stdlib.h>
+  | '(' typename ')' '{' initlist maybecomma '}'  %prec UNARY
+parse.y:294:4:
+         if (failure)
+    ^    
+parse.y:382:5: warning: implicit declaration of function ‘expand_start_stmt_expr’; did you mean ‘expand_start_delayed_expr’? [-Wimplicit-function-declaration]
+       }
+     ^ ~                   
+     expand_start_delayed_expr
+parse.y:387:5: warning: implicit declaration of function ‘expand_end_stmt_expr’; did you mean ‘expand_end_delayed_expr’? [-Wimplicit-function-declaration]
+     $$ = get_last_expr ();
+     ^~~~~~~~~~~~~~~~~~~~
+     expand_end_delayed_expr
+parse.y:425:19: warning: implicit declaration of function ‘suspend_momentary’ [-Wimplicit-function-declaration]
+   { current_declspecs = $<ttype>0;
+                   ^~~~~~~~~~~~~~~~ 
+parse.y:430:3: warning: implicit declaration of function ‘resume_momentary’ [-Wimplicit-function-declaration]
+  typed_declspecs setspecs initdecls ';'
+   ^~~~~~~~~~~~~~~~
+parse.y:823:5: warning: implicit declaration of function ‘push_momentary’ [-Wimplicit-function-declaration]
+     clear_last_expr ();
+     ^~~~~~~~~~~~~~
+parse.y:831:5: warning: implicit declaration of function ‘pop_momentary’ [-Wimplicit-function-declaration]
+     poplevel (1, 1, 0);
+     ^~~~~~~~~~~~~
+parse.y:844:3: warning: implicit declaration of function ‘emit_note’ [-Wimplicit-function-declaration]
+    IF '(' expr ')'
+   ^~~~~~~~~
+parse.y:845:24: warning: implicit declaration of function ‘truthvalue_conversion’; did you mean ‘default_conversion’? [-Wimplicit-function-declaration]
+   { emit_note (input_filename, @1.first_line);
+                        ^~~~~~~~~~~~~~~~~~~~~
+                        default_conversion
+parse.y:854:5: warning: implicit declaration of function ‘clear_momentary’ [-Wimplicit-function-declaration]
+     expand_expr_stmt ($1);
+     ^~~~~~~~~~~~~~~
+parse.y:956:5: warning: implicit declaration of function ‘c_expand_return’; did you mean ‘expand_return’? [-Wimplicit-function-declaration]
+   { emit_note (input_filename, @1.first_line);
+     ^~~~~~~~~~~~~~~
+     expand_return
+parse.y:972:5: warning: implicit declaration of function ‘c_expand_asm_operands’; did you mean ‘c_expand_start_case’? [-Wimplicit-function-declaration]
+     if (TREE_CHAIN ($4)) $4 = combine_strings ($4);
+     ^~~~~~~~~~~~~~~~~~~~~
+     c_expand_start_case
+parse.y:1063:3: warning: implicit declaration of function ‘push_parm_decl’; did you mean ‘start_decl’? [-Wimplicit-function-declaration]
+  parm
+   ^~~           
+   start_decl
+parse.y: In function ‘combine_strings’:
+parse.y:1156:8: warning: incompatible implicit declaration of built-in function ‘bcopy’
+      {
+        ^    
+parse.y: At top level:
+parse.y:1200:8: warning: type defaults to ‘int’ in declaration of ‘dollar_seen’ [-Wimplicit-int]
+        Actual allocated length is maxtoken + 2.  */
+        ^~~~~~~~~~~
+parse.y: In function ‘init_lex’:
+parse.y:1270:16: warning: conflicting types for built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+ {
+                ^     
+parse.y: In function ‘extend_token_buffer’:
+parse.y:1395:27: warning: implicit declaration of function ‘realloc’ [-Wimplicit-function-declaration]
+   maxtoken = maxtoken * 2 + 10;
+                           ^~~~~  
+parse.y:1395:27: warning: incompatible implicit declaration of built-in function ‘realloc’
+parse.y:1395:27: note: include ‘<stdlib.h>’ or provide a declaration of ‘realloc’
+parse.y:1090:1:
++#include <stdlib.h>
+  ;
+parse.y:1395:27:
+   maxtoken = maxtoken * 2 + 10;
+                           ^~~~~  
+parse.y:1397:5: warning: implicit declaration of function ‘fatal’ [-Wimplicit-function-declaration]
+   if (token_buffer == 0)
+     ^~~~~
+parse.y: In function ‘check_newline’:
+parse.y:1516:4: warning: implicit declaration of function ‘strcpy’ [-Wimplicit-function-declaration]
+      = (char *) permalloc (TREE_STRING_LENGTH (yylval.ttype) + 1);
+    ^ ~~~~
+parse.y:1516:4: warning: incompatible implicit declaration of built-in function ‘strcpy’
+parse.y:1516:4: note: include ‘<string.h>’ or provide a declaration of ‘strcpy’
+parse.y:1090:1:
++#include <string.h>
+  ;
+parse.y:1516:4:
+      = (char *) permalloc (TREE_STRING_LENGTH (yylval.ttype) + 1);
+    ^ ~~~~
+parse.y: In function ‘yylex’:
+parse.y:1725:7: warning: implicit declaration of function ‘strcmp’ [-Wimplicit-function-declaration]
+      if (p->name[0] == token_buffer[0]
+       ^~~~~~
+parse.y:2017:6: warning: implicit declaration of function ‘int_fits_type_p’ [-Wimplicit-function-declaration]
+      if (!spec_long && !spec_unsigned
+      ^~~~~~~~~~~~~~~
+parse.y:2116:29: warning: incompatible implicit declaration of built-in function ‘alloca’
+         to an int, making a vector of ints.  */
+                             ^~~~~~
+gcc -g    -c -o tree.o tree.c
+In file included from tree.c:39:
+tree.c: In function ‘init_tree’:
+obstack.h:272:3: warning: implicit declaration of function ‘_obstack_begin’; did you mean ‘obstack_begin’? [-Wimplicit-function-declaration]
+   _obstack_begin ((h), 4096 - 4, 0, obstack_chunk_alloc, obstack_chunk_free)
+   ^~~~~~~~~~~~~~
+tree.c:145:3: note: in expansion of macro ‘obstack_init’
+   obstack_init (&permanent_obstack);
+   ^~~~~~~~~~~~
+obstack.h:325:7: warning: implicit declaration of function ‘_obstack_newchunk’; did you mean ‘obstack_blank’? [-Wimplicit-function-declaration]
+     ? _obstack_newchunk (__o, __len) : 0);    \
+       ^~~~~~~~~~~~~~~~~
+obstack.h:331:4: note: in expansion of macro ‘obstack_blank’
+    obstack_blank (__h, (length));     \
+    ^~~~~~~~~~~~~
+tree.c:148:33: note: in expansion of macro ‘obstack_alloc’
+   temporary_firstobj = (char *) obstack_alloc (&temporary_obstack, 0);
+                                 ^~~~~~~~~~~~~
+obstack.h:348:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+      = (char*)((int)(__o->next_free+__o->alignment_mask)  \
+                ^
+obstack.h:332:4: note: in expansion of macro ‘obstack_finish’
+    obstack_finish (__h); })
+    ^~~~~~~~~~~~~~
+tree.c:148:33: note: in expansion of macro ‘obstack_alloc’
+   temporary_firstobj = (char *) obstack_alloc (&temporary_obstack, 0);
+                                 ^~~~~~~~~~~~~
+obstack.h:348:8: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+      = (char*)((int)(__o->next_free+__o->alignment_mask)  \
+        ^
+obstack.h:332:4: note: in expansion of macro ‘obstack_finish’
+    obstack_finish (__h); })
+    ^~~~~~~~~~~~~~
+tree.c:148:33: note: in expansion of macro ‘obstack_alloc’
+   temporary_firstobj = (char *) obstack_alloc (&temporary_obstack, 0);
+                                 ^~~~~~~~~~~~~
+obstack.h:348:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+      = (char*)((int)(__o->next_free+__o->alignment_mask)  \
+                ^
+obstack.h:332:4: note: in expansion of macro ‘obstack_finish’
+    obstack_finish (__h); })
+    ^~~~~~~~~~~~~~
+tree.c:150:33: note: in expansion of macro ‘obstack_alloc’
+   momentary_firstobj = (char *) obstack_alloc (&momentary_obstack, 0);
+                                 ^~~~~~~~~~~~~
+obstack.h:348:8: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+      = (char*)((int)(__o->next_free+__o->alignment_mask)  \
+        ^
+obstack.h:332:4: note: in expansion of macro ‘obstack_finish’
+    obstack_finish (__h); })
+    ^~~~~~~~~~~~~~
+tree.c:150:33: note: in expansion of macro ‘obstack_alloc’
+   momentary_firstobj = (char *) obstack_alloc (&momentary_obstack, 0);
+                                 ^~~~~~~~~~~~~
+obstack.h:348:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+      = (char*)((int)(__o->next_free+__o->alignment_mask)  \
+                ^
+obstack.h:332:4: note: in expansion of macro ‘obstack_finish’
+    obstack_finish (__h); })
+    ^~~~~~~~~~~~~~
+tree.c:153:16: note: in expansion of macro ‘obstack_alloc’
+     = (char *) obstack_alloc (&maybepermanent_obstack, 0);
+                ^~~~~~~~~~~~~
+obstack.h:348:8: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+      = (char*)((int)(__o->next_free+__o->alignment_mask)  \
+        ^
+obstack.h:332:4: note: in expansion of macro ‘obstack_finish’
+    obstack_finish (__h); })
+    ^~~~~~~~~~~~~~
+tree.c:153:16: note: in expansion of macro ‘obstack_alloc’
+     = (char *) obstack_alloc (&maybepermanent_obstack, 0);
+                ^~~~~~~~~~~~~
+tree.c:159:3: warning: implicit declaration of function ‘bzero’ [-Wimplicit-function-declaration]
+   bzero (hash_table, sizeof hash_table);
+   ^~~~~
+tree.c:159:3: warning: incompatible implicit declaration of built-in function ‘bzero’
+In file included from tree.c:39:
+tree.c: In function ‘preserve_data’:
+obstack.h:348:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+      = (char*)((int)(__o->next_free+__o->alignment_mask)  \
+                ^
+obstack.h:332:4: note: in expansion of macro ‘obstack_finish’
+    obstack_finish (__h); })
+    ^~~~~~~~~~~~~~
+tree.c:212:16: note: in expansion of macro ‘obstack_alloc’
+     = (char *) obstack_alloc (&maybepermanent_obstack, 0);
+                ^~~~~~~~~~~~~
+obstack.h:348:8: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+      = (char*)((int)(__o->next_free+__o->alignment_mask)  \
+        ^
+obstack.h:332:4: note: in expansion of macro ‘obstack_finish’
+    obstack_finish (__h); })
+    ^~~~~~~~~~~~~~
+tree.c:212:16: note: in expansion of macro ‘obstack_alloc’
+     = (char *) obstack_alloc (&maybepermanent_obstack, 0);
+                ^~~~~~~~~~~~~
+tree.c: In function ‘oballoc’:
+obstack.h:348:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+      = (char*)((int)(__o->next_free+__o->alignment_mask)  \
+                ^
+obstack.h:332:4: note: in expansion of macro ‘obstack_finish’
+    obstack_finish (__h); })
+    ^~~~~~~~~~~~~~
+tree.c:223:19: note: in expansion of macro ‘obstack_alloc’
+   return (char *) obstack_alloc (current_obstack, size);
+                   ^~~~~~~~~~~~~
+obstack.h:348:8: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+      = (char*)((int)(__o->next_free+__o->alignment_mask)  \
+        ^
+obstack.h:332:4: note: in expansion of macro ‘obstack_finish’
+    obstack_finish (__h); })
+    ^~~~~~~~~~~~~~
+tree.c:223:19: note: in expansion of macro ‘obstack_alloc’
+   return (char *) obstack_alloc (current_obstack, size);
+                   ^~~~~~~~~~~~~
+tree.c: In function ‘permalloc’:
+obstack.h:348:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+      = (char*)((int)(__o->next_free+__o->alignment_mask)  \
+                ^
+obstack.h:332:4: note: in expansion of macro ‘obstack_finish’
+    obstack_finish (__h); })
+    ^~~~~~~~~~~~~~
+tree.c:244:19: note: in expansion of macro ‘obstack_alloc’
+   return (char *) obstack_alloc (&permanent_obstack, size);
+                   ^~~~~~~~~~~~~
+obstack.h:348:8: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+      = (char*)((int)(__o->next_free+__o->alignment_mask)  \
+        ^
+obstack.h:332:4: note: in expansion of macro ‘obstack_finish’
+    obstack_finish (__h); })
+    ^~~~~~~~~~~~~~
+tree.c:244:19: note: in expansion of macro ‘obstack_alloc’
+   return (char *) obstack_alloc (&permanent_obstack, size);
+                   ^~~~~~~~~~~~~
+tree.c: In function ‘push_momentary’:
+obstack.h:348:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+      = (char*)((int)(__o->next_free+__o->alignment_mask)  \
+                ^
+obstack.h:332:4: note: in expansion of macro ‘obstack_finish’
+    obstack_finish (__h); })
+    ^~~~~~~~~~~~~~
+tree.c:256:34: note: in expansion of macro ‘obstack_alloc’
+     = (struct momentary_level *) obstack_alloc (&momentary_obstack,
+                                  ^~~~~~~~~~~~~
+obstack.h:348:8: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+      = (char*)((int)(__o->next_free+__o->alignment_mask)  \
+        ^
+obstack.h:332:4: note: in expansion of macro ‘obstack_finish’
+    obstack_finish (__h); })
+    ^~~~~~~~~~~~~~
+tree.c:256:34: note: in expansion of macro ‘obstack_alloc’
+     = (struct momentary_level *) obstack_alloc (&momentary_obstack,
+                                  ^~~~~~~~~~~~~
+tree.c: In function ‘make_node’:
+obstack.h:348:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+      = (char*)((int)(__o->next_free+__o->alignment_mask)  \
+                ^
+obstack.h:332:4: note: in expansion of macro ‘obstack_finish’
+    obstack_finish (__h); })
+    ^~~~~~~~~~~~~~
+tree.c:380:14: note: in expansion of macro ‘obstack_alloc’
+   t = (tree) obstack_alloc (obstack, length);
+              ^~~~~~~~~~~~~
+obstack.h:348:8: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+      = (char*)((int)(__o->next_free+__o->alignment_mask)  \
+        ^
+obstack.h:332:4: note: in expansion of macro ‘obstack_finish’
+    obstack_finish (__h); })
+    ^~~~~~~~~~~~~~
+tree.c:380:14: note: in expansion of macro ‘obstack_alloc’
+   t = (tree) obstack_alloc (obstack, length);
+              ^~~~~~~~~~~~~
+tree.c: In function ‘copy_node’:
+obstack.h:348:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+      = (char*)((int)(__o->next_free+__o->alignment_mask)  \
+                ^
+obstack.h:332:4: note: in expansion of macro ‘obstack_finish’
+    obstack_finish (__h); })
+    ^~~~~~~~~~~~~~
+tree.c:468:14: note: in expansion of macro ‘obstack_alloc’
+   t = (tree) obstack_alloc (current_obstack, length);
+              ^~~~~~~~~~~~~
+obstack.h:348:8: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+      = (char*)((int)(__o->next_free+__o->alignment_mask)  \
+        ^
+obstack.h:332:4: note: in expansion of macro ‘obstack_finish’
+    obstack_finish (__h); })
+    ^~~~~~~~~~~~~~
+tree.c:468:14: note: in expansion of macro ‘obstack_alloc’
+   t = (tree) obstack_alloc (current_obstack, length);
+              ^~~~~~~~~~~~~
+tree.c: In function ‘get_identifier’:
+tree.c:512:3: warning: implicit declaration of function ‘strcmp’ [-Wimplicit-function-declaration]
+  !strcmp (IDENTIFIER_POINTER (idp), text)) {
+   ^~~~~~
+In file included from tree.c:39:
+obstack.h:309:4: warning: implicit declaration of function ‘bcopy’ [-Wimplicit-function-declaration]
+    bcopy (where, __o->next_free, __len),    \
+    ^~~~~
+obstack.h:341:4: note: in expansion of macro ‘obstack_grow0’
+    obstack_grow0 (__h, (where), (length));    \
+    ^~~~~~~~~~~~~
+tree.c:520:30: note: in expansion of macro ‘obstack_copy0’
+   IDENTIFIER_POINTER (idp) = obstack_copy0 (&permanent_obstack, text, len);
+                              ^~~~~~~~~~~~~
+obstack.h:309:4: warning: incompatible implicit declaration of built-in function ‘bcopy’
+    bcopy (where, __o->next_free, __len),    \
+    ^~~~~
+obstack.h:341:4: note: in expansion of macro ‘obstack_grow0’
+    obstack_grow0 (__h, (where), (length));    \
+    ^~~~~~~~~~~~~
+tree.c:520:30: note: in expansion of macro ‘obstack_copy0’
+   IDENTIFIER_POINTER (idp) = obstack_copy0 (&permanent_obstack, text, len);
+                              ^~~~~~~~~~~~~
+obstack.h:348:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+      = (char*)((int)(__o->next_free+__o->alignment_mask)  \
+                ^
+obstack.h:342:4: note: in expansion of macro ‘obstack_finish’
+    obstack_finish (__h); })
+    ^~~~~~~~~~~~~~
+tree.c:520:30: note: in expansion of macro ‘obstack_copy0’
+   IDENTIFIER_POINTER (idp) = obstack_copy0 (&permanent_obstack, text, len);
+                              ^~~~~~~~~~~~~
+obstack.h:348:8: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+      = (char*)((int)(__o->next_free+__o->alignment_mask)  \
+        ^
+obstack.h:342:4: note: in expansion of macro ‘obstack_finish’
+    obstack_finish (__h); })
+    ^~~~~~~~~~~~~~
+tree.c:520:30: note: in expansion of macro ‘obstack_copy0’
+   IDENTIFIER_POINTER (idp) = obstack_copy0 (&permanent_obstack, text, len);
+                              ^~~~~~~~~~~~~
+tree.c: In function ‘build_string’:
+obstack.h:309:4: warning: incompatible implicit declaration of built-in function ‘bcopy’
+    bcopy (where, __o->next_free, __len),    \
+    ^~~~~
+obstack.h:341:4: note: in expansion of macro ‘obstack_grow0’
+    obstack_grow0 (__h, (where), (length));    \
+    ^~~~~~~~~~~~~
+tree.c:600:29: note: in expansion of macro ‘obstack_copy0’
+   TREE_STRING_POINTER (s) = obstack_copy0 (saveable_obstack, str, len);
+                             ^~~~~~~~~~~~~
+obstack.h:348:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+      = (char*)((int)(__o->next_free+__o->alignment_mask)  \
+                ^
+obstack.h:342:4: note: in expansion of macro ‘obstack_finish’
+    obstack_finish (__h); })
+    ^~~~~~~~~~~~~~
+tree.c:600:29: note: in expansion of macro ‘obstack_copy0’
+   TREE_STRING_POINTER (s) = obstack_copy0 (saveable_obstack, str, len);
+                             ^~~~~~~~~~~~~
+obstack.h:348:8: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+      = (char*)((int)(__o->next_free+__o->alignment_mask)  \
+        ^
+obstack.h:342:4: note: in expansion of macro ‘obstack_finish’
+    obstack_finish (__h); })
+    ^~~~~~~~~~~~~~
+tree.c:600:29: note: in expansion of macro ‘obstack_copy0’
+   TREE_STRING_POINTER (s) = obstack_copy0 (saveable_obstack, str, len);
+                             ^~~~~~~~~~~~~
+tree.c: In function ‘chainon’:
+tree.c:696:18: warning: implicit declaration of function ‘abort’ [-Wimplicit-function-declaration]
+  if (t == op2) { abort (); } /* Circularity being created */
+                  ^~~~~
+tree.c:696:18: warning: incompatible implicit declaration of built-in function ‘abort’
+tree.c:696:18: note: include ‘<stdlib.h>’ or provide a declaration of ‘abort’
+tree.c:128:1:
++#include <stdlib.h>
+ };
+tree.c:696:18:
+  if (t == op2) { abort (); } /* Circularity being created */
+                  ^~~~~
+tree.c: In function ‘size_in_bytes’:
+tree.c:795:7: warning: implicit declaration of function ‘incomplete_type_error’ [-Wimplicit-function-declaration]
+       incomplete_type_error (0, type);
+       ^~~~~~~~~~~~~~~~~~~~~
+tree.c: In function ‘lvalue_p’:
+tree.c:859:7: warning: implicit declaration of function ‘language_lvalue_valid’ [-Wimplicit-function-declaration]
+   if (language_lvalue_valid (ref))
+       ^~~~~~~~~~~~~~~~~~~~~
+tree.c: In function ‘lvalue_or_else’:
+tree.c:890:5: warning: implicit declaration of function ‘error’; did you mean ‘perror’? [-Wimplicit-function-declaration]
+     error ("invalid lvalue in %s", string);
+     ^~~~~
+     perror
+tree.c: In function ‘type_hash_lookup’:
+tree.c:1339:9: warning: implicit declaration of function ‘tree_int_cst_equal’ [-Wimplicit-function-declaration]
+      || tree_int_cst_equal (TYPE_MAX_VALUE (h->type),
+         ^~~~~~~~~~~~~~~~~~
+tree.c:1347:6: warning: implicit declaration of function ‘type_list_equal’ [-Wimplicit-function-declaration]
+   && type_list_equal (TYPE_DOMAIN (h->type), TYPE_DOMAIN (type)))))
+      ^~~~~~~~~~~~~~~
+gcc -g    -c -o print-tree.o print-tree.c
+print-tree.c: In function ‘dump_tree’:
+print-tree.c:67:22: warning: implicit declaration of function ‘alloca’ [-Wimplicit-function-declaration]
+   markvec = (char *) alloca (tree_node_counter + 1);
+                      ^~~~~~
+print-tree.c:67:22: warning: incompatible implicit declaration of built-in function ‘alloca’
+print-tree.c:68:3: warning: implicit declaration of function ‘bzero’ [-Wimplicit-function-declaration]
+   bzero (markvec, tree_node_counter + 1);
+   ^~~~~
+print-tree.c:68:3: warning: incompatible implicit declaration of built-in function ‘bzero’
+print-tree.c: In function ‘skip’:
+print-tree.c:284:20: warning: implicit declaration of function ‘strlen’ [-Wimplicit-function-declaration]
+   fputs (spaces + (strlen (spaces) - (12 + MIN (40,(indent+1)*2))), outfile);
+                    ^~~~~~
+print-tree.c:284:20: warning: incompatible implicit declaration of built-in function ‘strlen’
+print-tree.c:284:20: note: include ‘<string.h>’ or provide a declaration of ‘strlen’
+print-tree.c:33:1:
++#include <string.h>
+ };
+print-tree.c:284:20:
+   fputs (spaces + (strlen (spaces) - (12 + MIN (40,(indent+1)*2))), outfile);
+                    ^~~~~~
+print-tree.c: In function ‘dump’:
+print-tree.c:307:20: warning: incompatible implicit declaration of built-in function ‘strlen’
+   fputs (spaces + (strlen (spaces) - MIN (40, (indent+1)*2)), outfile);
+                    ^~~~~~
+print-tree.c:307:20: note: include ‘<string.h>’ or provide a declaration of ‘strlen’
+print-tree.c:339:8: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+    if ((int) (DECL_INITIAL (node)) == 1)
+        ^
+print-tree.c:352:11: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+       if ((int) (DECL_INITIAL (node)) != 1)
+           ^
+print-tree.c:493:12: warning: implicit declaration of function ‘abort’ [-Wimplicit-function-declaration]
+       else abort ();
+            ^~~~~
+print-tree.c:493:12: warning: incompatible implicit declaration of built-in function ‘abort’
+print-tree.c:493:12: note: include ‘<stdlib.h>’ or provide a declaration of ‘abort’
+print-tree.c:33:1:
++#include <stdlib.h>
+ };
+print-tree.c:493:12:
+       else abort ();
+            ^~~~~
+print-tree.c:498:7: warning: incompatible implicit declaration of built-in function ‘abort’
+       abort ();
+       ^~~~~
+print-tree.c:498:7: note: include ‘<stdlib.h>’ or provide a declaration of ‘abort’
+gcc -g    -c -o decl.o decl.c
+decl.c: In function ‘make_binding_level’:
+decl.c:265:35: warning: implicit declaration of function ‘xmalloc’; did you mean ‘oballoc’? [-Wimplicit-function-declaration]
+   return (struct binding_level *) xmalloc (sizeof (struct binding_level));
+                                   ^~~~~~~
+                                   oballoc
+decl.c:265:10: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   return (struct binding_level *) xmalloc (sizeof (struct binding_level));
+          ^
+decl.c: In function ‘pushlevel’:
+decl.c:285:4: warning: implicit declaration of function ‘abort’ [-Wimplicit-function-declaration]
+    abort ();
+    ^~~~~
+decl.c:285:4: warning: incompatible implicit declaration of built-in function ‘abort’
+decl.c:285:4: note: include ‘<stdlib.h>’ or provide a declaration of ‘abort’
+decl.c:34:1:
++#include <stdlib.h>
+ 
+decl.c:285:4:
+    abort ();
+    ^~~~~
+decl.c: In function ‘poplevel’:
+decl.c:425:8: warning: implicit declaration of function ‘error’; did you mean ‘yyerror’? [-Wimplicit-function-declaration]
+        error ("label `%s' used somewhere above but not defined",
+        ^~~~~
+        yyerror
+decl.c: In function ‘duplicate_decls’:
+decl.c:508:21: warning: implicit declaration of function ‘comptypes’; did you mean ‘commontype’? [-Wimplicit-function-declaration]
+   int types_match = comptypes (TREE_TYPE (new), TREE_TYPE (old));
+                     ^~~~~~~~~
+                     commontype
+decl.c:513:7: warning: implicit declaration of function ‘error_with_decl’ [-Wimplicit-function-declaration]
+       error_with_decl (new, "`%s' redeclared as different kind of symbol");
+       ^~~~~~~~~~~~~~~
+decl.c:597:7: warning: implicit declaration of function ‘bcopy’ [-Wimplicit-function-declaration]
+       bcopy ((char *) new + sizeof (struct tree_common),
+       ^~~~~
+decl.c:597:7: warning: incompatible implicit declaration of built-in function ‘bcopy’
+decl.c: In function ‘pushdecl’:
+decl.c:656:8: warning: implicit declaration of function ‘warning’ [-Wimplicit-function-declaration]
+        warning
+        ^~~~~~~
+decl.c: In function ‘implicitly_declare’:
+decl.c:719:7: warning: implicit declaration of function ‘end_temporary_allocation’ [-Wimplicit-function-declaration]
+       end_temporary_allocation ();
+       ^~~~~~~~~~~~~~~~~~~~~~~~
+decl.c:730:3: warning: implicit declaration of function ‘rest_of_decl_compilation’ [-Wimplicit-function-declaration]
+   rest_of_decl_compilation (decl, 0, 0, 0);
+   ^~~~~~~~~~~~~~~~~~~~~~~~
+decl.c:743:7: warning: implicit declaration of function ‘temporary_allocation’ [-Wimplicit-function-declaration]
+       temporary_allocation ();
+       ^~~~~~~~~~~~~~~~~~~~
+decl.c: In function ‘builtin_function’:
+decl.c:1223:3: warning: implicit declaration of function ‘make_function_rtl’; did you mean ‘start_function’? [-Wimplicit-function-declaration]
+   make_function_rtl (decl);
+   ^~~~~~~~~~~~~~~~~
+   start_function
+decl.c: In function ‘finish_decl’:
+decl.c:1437:4: warning: implicit declaration of function ‘complete_array_type’; did you mean ‘build_array_type’? [-Wimplicit-function-declaration]
+  = complete_array_type (type, DECL_INITIAL (decl), do_default);
+    ^~~~~~~~~~~~~~~~~~~
+    build_array_type
+decl.c:1509:8: warning: implicit declaration of function ‘expand_decl’; did you mean ‘expand_asm’? [-Wimplicit-function-declaration]
+        expand_decl (decl);
+        ^~~~~~~~~~~
+        expand_asm
+decl.c:1518:7: warning: implicit declaration of function ‘permanent_allocation’ [-Wimplicit-function-declaration]
+       permanent_allocation ();
+       ^~~~~~~~~~~~~~~~~~~~
+decl.c: In function ‘grokdeclarator’:
+decl.c:1665:6: warning: incompatible implicit declaration of built-in function ‘abort’
+      abort ();
+      ^~~~~
+decl.c:1665:6: note: include ‘<stdlib.h>’ or provide a declaration of ‘abort’
+decl.c:2123:2: warning: incompatible implicit declaration of built-in function ‘abort’
+  abort ();
+  ^~~~~
+decl.c:2123:2: note: include ‘<stdlib.h>’ or provide a declaration of ‘abort’
+decl.c:2221:3: warning: implicit declaration of function ‘incomplete_type_error’ [-Wimplicit-function-declaration]
+   incomplete_type_error (0, type);
+   ^~~~~~~~~~~~~~~~~~~~~
+decl.c:2290:11: warning: implicit declaration of function ‘strcmp’ [-Wimplicit-function-declaration]
+      if (!strcmp (IDENTIFIER_POINTER (declarator), "main"))
+           ^~~~~~
+decl.c:2313:6: warning: implicit declaration of function ‘warning_with_decl’; did you mean ‘finish_decl’? [-Wimplicit-function-declaration]
+      warning_with_decl (decl, "variable `%s' declared `inline'");
+      ^~~~~~~~~~~~~~~~~
+      finish_decl
+decl.c: In function ‘xref_tag’:
+decl.c:2473:1: warning: type of ‘code’ defaults to ‘int’ [-Wimplicit-int]
+ xref_tag (code, name)
+ ^~~~~~~~
+decl.c: In function ‘finish_struct’:
+decl.c:2564:9: warning: implicit declaration of function ‘suspend_momentary’ [-Wimplicit-function-declaration]
+   old = suspend_momentary ();
+         ^~~~~~~~~~~~~~~~~
+decl.c:2781:3: warning: implicit declaration of function ‘resume_momentary’ [-Wimplicit-function-declaration]
+   resume_momentary (old);
+   ^~~~~~~~~~~~~~~~
+decl.c: In function ‘start_function’:
+decl.c:2952:3: warning: implicit declaration of function ‘announce_function’; did you mean ‘finish_function’? [-Wimplicit-function-declaration]
+   announce_function (current_function_decl);
+   ^~~~~~~~~~~~~~~~~
+   finish_function
+decl.c: In function ‘store_parm_decls’:
+decl.c:3245:3: warning: implicit declaration of function ‘expand_function_start’; did you mean ‘build_function_call’? [-Wimplicit-function-declaration]
+   expand_function_start (fndecl);
+   ^~~~~~~~~~~~~~~~~~~~~
+   build_function_call
+decl.c: In function ‘finish_function’:
+decl.c:3273:3: warning: implicit declaration of function ‘expand_function_end’; did you mean ‘expand_end_function’? [-Wimplicit-function-declaration]
+   expand_function_end ();
+   ^~~~~~~~~~~~~~~~~~~
+   expand_end_function
+decl.c:3282:3: warning: implicit declaration of function ‘rest_of_compilation’ [-Wimplicit-function-declaration]
+   rest_of_compilation (fndecl);
+   ^~~~~~~~~~~~~~~~~~~
+gcc -g    -c -o typecheck.o typecheck.c
+typecheck.c: In function ‘incomplete_type_error’:
+typecheck.c:107:5: warning: implicit declaration of function ‘error’; did you mean ‘perror’? [-Wimplicit-function-declaration]
+     error ("`%s' has an incomplete type",
+     ^~~~~
+     perror
+typecheck.c:142:4: warning: implicit declaration of function ‘abort’ [-Wimplicit-function-declaration]
+    abort ();
+    ^~~~~
+typecheck.c:142:4: warning: incompatible implicit declaration of built-in function ‘abort’
+typecheck.c:142:4: note: include ‘<stdlib.h>’ or provide a declaration of ‘abort’
+typecheck.c:36:1:
++#include <stdlib.h>
+ 
+typecheck.c:142:4:
+    abort ();
+    ^~~~~
+typecheck.c: In function ‘compparms’:
+typecheck.c:413:12: warning: implicit declaration of function ‘compparms1’; did you mean ‘compparms’? [-Wimplicit-function-declaration]
+     return compparms1 (t2);
+            ^~~~~~~~~~
+            compparms
+typecheck.c: In function ‘get_floating_type’:
+typecheck.c:543:3: warning: incompatible implicit declaration of built-in function ‘abort’
+   abort ();
+   ^~~~~
+typecheck.c:543:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘abort’
+typecheck.c: In function ‘c_sizeof’:
+typecheck.c:555:2: warning: implicit declaration of function ‘warning’ [-Wimplicit-function-declaration]
+  warning ("sizeof applied to a function type");
+  ^~~~~~~
+typecheck.c: In function ‘default_conversion’:
+typecheck.c:652:12: warning: implicit declaration of function ‘lvalue_p’ [-Wimplicit-function-declaration]
+       if (!lvalue_p (exp)
+            ^~~~~~~~
+typecheck.c: In function ‘build_binary_op_nodefault’:
+typecheck.c:1368:10: warning: implicit declaration of function ‘int_fits_type_p’ [-Wimplicit-function-declaration]
+          int_fits_type_p (arg0, type)))
+          ^~~~~~~~~~~~~~~
+typecheck.c: In function ‘pointer_diff’:
+typecheck.c:1575:16: warning: implicit declaration of function ‘exact_log2’ [-Wimplicit-function-declaration]
+       && -1 == exact_log2 (TREE_INT_CST_LOW (op1)))
+                ^~~~~~~~~~
+typecheck.c: In function ‘readonly_warning’:
+typecheck.c:2265:3: warning: implicit declaration of function ‘strcpy’ [-Wimplicit-function-declaration]
+   strcpy (buf, string);
+   ^~~~~~
+typecheck.c:2265:3: warning: incompatible implicit declaration of built-in function ‘strcpy’
+typecheck.c:2265:3: note: include ‘<string.h>’ or provide a declaration of ‘strcpy’
+typecheck.c:36:1:
++#include <string.h>
+ 
+typecheck.c:2265:3:
+   strcpy (buf, string);
+   ^~~~~~
+typecheck.c:2273:4: warning: implicit declaration of function ‘strcat’ [-Wimplicit-function-declaration]
+    strcat (buf, " of read-only member `%s'");
+    ^~~~~~
+typecheck.c:2273:4: warning: incompatible implicit declaration of built-in function ‘strcat’
+typecheck.c:2273:4: note: include ‘<string.h>’ or provide a declaration of ‘strcat’
+typecheck.c:2279:7: warning: incompatible implicit declaration of built-in function ‘strcat’
+       strcat (buf, " of read-only variable `%s'");
+       ^~~~~~
+typecheck.c:2279:7: note: include ‘<string.h>’ or provide a declaration of ‘strcat’
+typecheck.c: In function ‘mark_addressable’:
+typecheck.c:2361:2: warning: implicit declaration of function ‘put_var_into_stack’ [-Wimplicit-function-declaration]
+  put_var_into_stack (x);
+  ^~~~~~~~~~~~~~~~~~
+typecheck.c: In function ‘c_expand_asm_operands’:
+typecheck.c:3227:31: warning: implicit declaration of function ‘alloca’ [-Wimplicit-function-declaration]
+   register tree *o = (tree *) alloca (noutputs * sizeof (tree));
+                               ^~~~~~
+typecheck.c:3227:31: warning: incompatible implicit declaration of built-in function ‘alloca’
+typecheck.c:3237:3: warning: implicit declaration of function ‘expand_asm_operands’; did you mean ‘c_expand_asm_operands’? [-Wimplicit-function-declaration]
+   expand_asm_operands (string, outputs, inputs, vol);
+   ^~~~~~~~~~~~~~~~~~~
+   c_expand_asm_operands
+typecheck.c:3242:7: warning: implicit declaration of function ‘expand_expr’; did you mean ‘expand_return’? [-Wimplicit-function-declaration]
+       expand_expr (build_modify_expr (o[i], NOP_EXPR, TREE_VALUE (tail)),
+       ^~~~~~~~~~~
+       expand_return
+gcc -g    -c -o stor-layout.o stor-layout.c
+stor-layout.c: In function ‘convert_units’:
+stor-layout.c:202:7: warning: implicit declaration of function ‘tree_int_cst_equal’ [-Wimplicit-function-declaration]
+    && tree_int_cst_equal (TREE_OPERAND (size, 1),
+       ^~~~~~~~~~~~~~~~~~
+stor-layout.c: In function ‘layout_decl’:
+stor-layout.c:261:5: warning: implicit declaration of function ‘abort’ [-Wimplicit-function-declaration]
+     abort ();
+     ^~~~~
+stor-layout.c:261:5: warning: incompatible implicit declaration of built-in function ‘abort’
+stor-layout.c:261:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘abort’
+stor-layout.c:27:1:
++#include <stdlib.h>
+ 
+stor-layout.c:261:5:
+     abort ();
+     ^~~~~
+stor-layout.c:269:5: warning: incompatible implicit declaration of built-in function ‘abort’
+     abort ();
+     ^~~~~
+stor-layout.c:269:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘abort’
+stor-layout.c:286:2: warning: incompatible implicit declaration of built-in function ‘abort’
+  abort ();
+  ^~~~~
+stor-layout.c:286:2: note: include ‘<stdlib.h>’ or provide a declaration of ‘abort’
+stor-layout.c:289:2: warning: incompatible implicit declaration of built-in function ‘abort’
+  abort ();
+  ^~~~~
+stor-layout.c:289:2: note: include ‘<stdlib.h>’ or provide a declaration of ‘abort’
+stor-layout.c: In function ‘layout_type’:
+stor-layout.c:541:5: warning: incompatible implicit declaration of built-in function ‘abort’
+     abort ();
+     ^~~~~
+stor-layout.c:541:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘abort’
+stor-layout.c:549:10: warning: implicit declaration of function ‘suspend_momentary’ [-Wimplicit-function-declaration]
+   old  = suspend_momentary ();
+          ^~~~~~~~~~~~~~~~~
+stor-layout.c:581:4: warning: incompatible implicit declaration of built-in function ‘abort’
+    abort ();
+    ^~~~~
+stor-layout.c:581:4: note: include ‘<stdlib.h>’ or provide a declaration of ‘abort’
+stor-layout.c:613:4: warning: incompatible implicit declaration of built-in function ‘abort’
+    abort ();  /* ??? Not written yet since not needed for C.  */
+    ^~~~~
+stor-layout.c:613:4: note: include ‘<stdlib.h>’ or provide a declaration of ‘abort’
+stor-layout.c:662:7: warning: incompatible implicit declaration of built-in function ‘abort’
+       abort ();
+       ^~~~~
+stor-layout.c:662:7: note: include ‘<stdlib.h>’ or provide a declaration of ‘abort’
+stor-layout.c:665:3: warning: implicit declaration of function ‘resume_momentary’ [-Wimplicit-function-declaration]
+   resume_momentary (old);
+   ^~~~~~~~~~~~~~~~
+gcc -g    -c -o fold-const.o fold-const.c
+fold-const.c: In function ‘mul_double’:
+fold-const.c:210:3: warning: implicit declaration of function ‘bzero’ [-Wimplicit-function-declaration]
+   bzero (prod, sizeof prod);
+   ^~~~~
+fold-const.c:210:3: warning: incompatible implicit declaration of built-in function ‘bzero’
+fold-const.c: In function ‘div_and_round_double’:
+fold-const.c:401:5: warning: implicit declaration of function ‘error’; did you mean ‘perror’? [-Wimplicit-function-declaration]
+     error
+     ^~~~~
+     perror
+fold-const.c:437:3: warning: incompatible implicit declaration of built-in function ‘bzero’
+   bzero (quo, sizeof quo);
+   ^~~~~
+fold-const.c:628:7: warning: implicit declaration of function ‘abort’ [-Wimplicit-function-declaration]
+       abort ();
+       ^~~~~
+fold-const.c:628:7: warning: incompatible implicit declaration of built-in function ‘abort’
+fold-const.c:628:7: note: include ‘<stdlib.h>’ or provide a declaration of ‘abort’
+fold-const.c:45:1:
++#include <stdlib.h>
+ 
+fold-const.c:628:7:
+       abort ();
+       ^~~~~
+fold-const.c: In function ‘combine’:
+fold-const.c:833:4: warning: incompatible implicit declaration of built-in function ‘abort’
+    abort ();
+    ^~~~~
+fold-const.c:833:4: note: include ‘<stdlib.h>’ or provide a declaration of ‘abort’
+fold-const.c:879:4: warning: incompatible implicit declaration of built-in function ‘abort’
+    abort ();
+    ^~~~~
+fold-const.c:879:4: note: include ‘<stdlib.h>’ or provide a declaration of ‘abort’
+fold-const.c:933:4: warning: incompatible implicit declaration of built-in function ‘abort’
+    abort ();
+    ^~~~~
+fold-const.c:933:4: note: include ‘<stdlib.h>’ or provide a declaration of ‘abort’
+fold-const.c: In function ‘fold’:
+fold-const.c:1431:8: warning: implicit declaration of function ‘tree_int_cst_lt’ [-Wimplicit-function-declaration]
+   || ! tree_int_cst_lt (newconst, constop)
+        ^~~~~~~~~~~~~~~
+gcc -g    -c -o rtl.o rtl.c
+In file included from rtl.c:32:
+rtl.c: In function ‘rtvec_alloc’:
+obstack.h:325:7: warning: implicit declaration of function ‘_obstack_newchunk’; did you mean ‘obstack_blank’? [-Wimplicit-function-declaration]
+     ? _obstack_newchunk (__o, __len) : 0);    \
+       ^~~~~~~~~~~~~~~~~
+obstack.h:331:4: note: in expansion of macro ‘obstack_blank’
+    obstack_blank (__h, (length));     \
+    ^~~~~~~~~~~~~
+rtl.c:146:16: note: in expansion of macro ‘obstack_alloc’
+   rt = (rtvec) obstack_alloc (rtl_obstack,
+                ^~~~~~~~~~~~~
+obstack.h:348:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+      = (char*)((int)(__o->next_free+__o->alignment_mask)  \
+                ^
+obstack.h:332:4: note: in expansion of macro ‘obstack_finish’
+    obstack_finish (__h); })
+    ^~~~~~~~~~~~~~
+rtl.c:146:16: note: in expansion of macro ‘obstack_alloc’
+   rt = (rtvec) obstack_alloc (rtl_obstack,
+                ^~~~~~~~~~~~~
+obstack.h:348:8: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+      = (char*)((int)(__o->next_free+__o->alignment_mask)  \
+        ^
+obstack.h:332:4: note: in expansion of macro ‘obstack_finish’
+    obstack_finish (__h); })
+    ^~~~~~~~~~~~~~
+rtl.c:146:16: note: in expansion of macro ‘obstack_alloc’
+   rt = (rtvec) obstack_alloc (rtl_obstack,
+                ^~~~~~~~~~~~~
+rtl.c: In function ‘rtx_alloc’:
+obstack.h:348:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+      = (char*)((int)(__o->next_free+__o->alignment_mask)  \
+                ^
+obstack.h:332:4: note: in expansion of macro ‘obstack_finish’
+    obstack_finish (__h); })
+    ^~~~~~~~~~~~~~
+rtl.c:170:14: note: in expansion of macro ‘obstack_alloc’
+   rt = (rtx) obstack_alloc (rtl_obstack, length);
+              ^~~~~~~~~~~~~
+obstack.h:348:8: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+      = (char*)((int)(__o->next_free+__o->alignment_mask)  \
+        ^
+obstack.h:332:4: note: in expansion of macro ‘obstack_finish’
+    obstack_finish (__h); })
+    ^~~~~~~~~~~~~~
+rtl.c:170:14: note: in expansion of macro ‘obstack_alloc’
+   rt = (rtx) obstack_alloc (rtl_obstack, length);
+              ^~~~~~~~~~~~~
+rtl.c: In function ‘reg_mentioned_p’:
+rtl.c:385:33: warning: implicit declaration of function ‘rtx_equal_p’; did you mean ‘rtx_varies_p’? [-Wimplicit-function-declaration]
+   if (GET_CODE (reg) == code && rtx_equal_p (reg, in))
+                                 ^~~~~~~~~~~
+                                 rtx_varies_p
+rtl.c: In function ‘rtx_equal_p’:
+rtl.c:481:8: warning: implicit declaration of function ‘strcmp’ [-Wimplicit-function-declaration]
+    if (strcmp (XSTR (x, i), XSTR (y, i)))
+        ^~~~~~
+rtl.c:492:4: warning: implicit declaration of function ‘abort’ [-Wimplicit-function-declaration]
+    abort ();
+    ^~~~~
+rtl.c:492:4: warning: incompatible implicit declaration of built-in function ‘abort’
+rtl.c:492:4: note: include ‘<stdlib.h>’ or provide a declaration of ‘abort’
+rtl.c:133:1:
++#include <stdlib.h>
+ #undef DEF_RTL_EXPR
+rtl.c:492:4:
+    abort ();
+    ^~~~~
+rtl.c: In function ‘print_rtx’:
+rtl.c:736:2: warning: incompatible implicit declaration of built-in function ‘abort’
+  abort ();
+  ^~~~~
+rtl.c:736:2: note: include ‘<stdlib.h>’ or provide a declaration of ‘abort’
+rtl.c: In function ‘dump_and_abort’:
+rtl.c:801:3: warning: incompatible implicit declaration of built-in function ‘abort’
+   abort ();
+   ^~~~~
+rtl.c:801:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘abort’
+rtl.c: In function ‘read_name’:
+rtl.c:870:6: warning: assignment to ‘char’ from ‘void *’ makes integer from pointer without a cast [-Wint-conversion]
+   *p = NULL;
+      ^
+rtl.c: In function ‘read_rtx’:
+rtl.c:981:3: warning: implicit declaration of function ‘alloca’ [-Wimplicit-function-declaration]
+   alloca (sizeof (struct rtx_list));
+   ^~~~~~
+rtl.c:981:3: warning: incompatible implicit declaration of built-in function ‘alloca’
+rtl.c:1019:16: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+    stringbuf = (char *) xmalloc (stringbufsize + 1);
+                ^
+rtl.c:1027:16: warning: implicit declaration of function ‘xrealloc’; did you mean ‘xmalloc’? [-Wimplicit-function-declaration]
+       (char *) xrealloc (stringbuf, stringbufsize + 1);
+                ^~~~~~~~
+                xmalloc
+rtl.c:1027:7: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+       (char *) xrealloc (stringbuf, stringbufsize + 1);
+       ^
+rtl.c:1037:9: warning: implicit declaration of function ‘strcpy’ [-Wimplicit-function-declaration]
+         strcpy (&stringbuf[j], "\\n\\t");
+         ^~~~~~
+rtl.c:1037:9: warning: incompatible implicit declaration of built-in function ‘strcpy’
+rtl.c:1037:9: note: include ‘<string.h>’ or provide a declaration of ‘strcpy’
+rtl.c:133:1:
++#include <string.h>
+ #undef DEF_RTL_EXPR
+rtl.c:1037:9:
+         strcpy (&stringbuf[j], "\\n\\t");
+         ^~~~~~
+rtl.c:1047:16: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+    stringbuf = (char *) xrealloc (stringbuf, j + 1);
+                ^
+rtl.c:1061:12: warning: implicit declaration of function ‘atoi’ [-Wimplicit-function-declaration]
+  tmp_int = atoi (tmp_char);
+            ^~~~
+rtl.c:1070:2: warning: incompatible implicit declaration of built-in function ‘abort’
+  abort ();
+  ^~~~~
+rtl.c:1070:2: note: include ‘<stdlib.h>’ or provide a declaration of ‘abort’
+rtl.c: In function ‘init_rtl’:
+rtl.c:1089:21: warning: implicit declaration of function ‘strlen’ [-Wimplicit-function-declaration]
+     rtx_length[i] = strlen (rtx_format[i]);
+                     ^~~~~~
+rtl.c:1089:21: warning: incompatible implicit declaration of built-in function ‘strlen’
+rtl.c:1089:21: note: include ‘<string.h>’ or provide a declaration of ‘strlen’
+gcc -g  -c genflags.c
+genflags.c: In function ‘gen_insn’:
+genflags.c:46:7: warning: implicit declaration of function ‘strlen’ [-Wimplicit-function-declaration]
+   if (strlen (XSTR (insn, 0)) == 0)
+       ^~~~~~
+genflags.c:46:7: warning: incompatible implicit declaration of built-in function ‘strlen’
+genflags.c:46:7: note: include ‘<string.h>’ or provide a declaration of ‘strlen’
+genflags.c:29:1:
++#include <string.h>
+ 
+genflags.c:46:7:
+   if (strlen (XSTR (insn, 0)) == 0)
+       ^~~~~~
+genflags.c:50:4: warning: incompatible implicit declaration of built-in function ‘strlen’
+    strlen (XSTR (insn, 2)) ? XSTR (insn, 2) : "1");
+    ^~~~~~
+genflags.c:50:4: note: include ‘<string.h>’ or provide a declaration of ‘strlen’
+genflags.c: In function ‘xmalloc’:
+genflags.c:55:1: warning: type of ‘size’ defaults to ‘int’ [-Wimplicit-int]
+ xmalloc (size)
+ ^~~~~~~
+genflags.c:57:22: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   register int val = malloc (size);
+                      ^~~~~~
+genflags.c:57:22: warning: incompatible implicit declaration of built-in function ‘malloc’
+genflags.c:57:22: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+genflags.c:29:1:
++#include <stdlib.h>
+ 
+genflags.c:57:22:
+   register int val = malloc (size);
+                      ^~~~~~
+genflags.c:57:22: warning: initialization of ‘int’ from ‘void *’ makes integer from pointer without a cast [-Wint-conversion]
+genflags.c: In function ‘xrealloc’:
+genflags.c:70:16: warning: implicit declaration of function ‘realloc’ [-Wimplicit-function-declaration]
+   int result = realloc (ptr, size);
+                ^~~~~~~
+genflags.c:70:16: warning: incompatible implicit declaration of built-in function ‘realloc’
+genflags.c:70:16: note: include ‘<stdlib.h>’ or provide a declaration of ‘realloc’
+genflags.c:70:16: warning: initialization of ‘int’ from ‘void *’ makes integer from pointer without a cast [-Wint-conversion]
+genflags.c: In function ‘fatal’:
+genflags.c:77:1: warning: type of ‘s’ defaults to ‘int’ [-Wimplicit-int]
+ fatal (s, a1, a2)
+ ^~~~~
+genflags.c:77:1: warning: type of ‘a1’ defaults to ‘int’ [-Wimplicit-int]
+genflags.c:77:1: warning: type of ‘a2’ defaults to ‘int’ [-Wimplicit-int]
+genflags.c:80:20: warning: passing argument 2 of ‘fprintf’ makes pointer from integer without a cast [-Wint-conversion]
+   fprintf (stderr, s, a1, a2);
+                    ^
+In file included from genflags.c:25:
+/usr/include/stdio.h:327:30: note: expected ‘const char * restrict’ but argument is of type ‘int’
+       const char *__restrict __format, ...);
+       ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+genflags.c:82:3: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+   exit (FATAL_EXIT_CODE);
+   ^~~~
+genflags.c:82:3: warning: incompatible implicit declaration of built-in function ‘exit’
+genflags.c:82:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+In file included from genflags.c:28:
+genflags.c: In function ‘main’:
+obstack.h:272:3: warning: implicit declaration of function ‘_obstack_begin’; did you mean ‘obstack_begin’? [-Wimplicit-function-declaration]
+   _obstack_begin ((h), 4096 - 4, 0, obstack_chunk_alloc, obstack_chunk_free)
+   ^~~~~~~~~~~~~~
+genflags.c:95:3: note: in expansion of macro ‘obstack_init’
+   obstack_init (rtl_obstack);
+   ^~~~~~~~~~~~
+genflags.c:104:7: warning: incompatible implicit declaration of built-in function ‘exit’
+       exit (FATAL_EXIT_CODE);
+       ^~~~
+genflags.c:104:7: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+genflags.c:107:3: warning: implicit declaration of function ‘init_rtl’ [-Wimplicit-function-declaration]
+   init_rtl ();
+   ^~~~~~~~
+genflags.c:116:11: warning: implicit declaration of function ‘read_skip_spaces’ [-Wimplicit-function-declaration]
+       c = read_skip_spaces (infile);
+           ^~~~~~~~~~~~~~~~
+genflags.c:127:3: warning: incompatible implicit declaration of built-in function ‘exit’
+   exit (ferror (stdout) != 0 ? FATAL_EXIT_CODE : SUCCESS_EXIT_CODE);
+   ^~~~
+genflags.c:127:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+gcc -g  -o genflags genflags.o rtl.o obstack.o 
+./genflags md > tmp-insn-flags.h
+Segmentation fault
+make: *** [Makefile:188: insn-flags.h] Error 139
+end of make

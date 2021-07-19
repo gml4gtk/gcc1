@@ -1,0 +1,510 @@
+Conflict in state 10 between rule 12 and token '|' resolved as reduce.
+Conflict in state 10 between rule 12 and token '&' resolved as reduce.
+Conflict in state 10 between rule 12 and token '+' resolved as reduce.
+Conflict in state 10 between rule 12 and token '-' resolved as reduce.
+Conflict in state 10 between rule 12 and token '*' resolved as reduce.
+Conflict in state 10 between rule 12 and token '/' resolved as reduce.
+Conflict in state 10 between rule 12 and token '%' resolved as reduce.
+Conflict in state 22 between rule 10 and token '|' resolved as reduce.
+Conflict in state 22 between rule 10 and token '&' resolved as shift.
+Conflict in state 22 between rule 10 and token '+' resolved as shift.
+Conflict in state 22 between rule 10 and token '-' resolved as shift.
+Conflict in state 22 between rule 10 and token '*' resolved as shift.
+Conflict in state 22 between rule 10 and token '/' resolved as shift.
+Conflict in state 22 between rule 10 and token '%' resolved as shift.
+Conflict in state 23 between rule 11 and token '|' resolved as reduce.
+Conflict in state 23 between rule 11 and token '&' resolved as reduce.
+Conflict in state 23 between rule 11 and token '+' resolved as shift.
+Conflict in state 23 between rule 11 and token '-' resolved as shift.
+Conflict in state 23 between rule 11 and token '*' resolved as shift.
+Conflict in state 23 between rule 11 and token '/' resolved as shift.
+Conflict in state 23 between rule 11 and token '%' resolved as shift.
+Conflict in state 24 between rule 5 and token '|' resolved as reduce.
+Conflict in state 24 between rule 5 and token '&' resolved as reduce.
+Conflict in state 24 between rule 5 and token '+' resolved as reduce.
+Conflict in state 24 between rule 5 and token '-' resolved as reduce.
+Conflict in state 24 between rule 5 and token '*' resolved as shift.
+Conflict in state 24 between rule 5 and token '/' resolved as shift.
+Conflict in state 24 between rule 5 and token '%' resolved as shift.
+Conflict in state 25 between rule 6 and token '|' resolved as reduce.
+Conflict in state 25 between rule 6 and token '&' resolved as reduce.
+Conflict in state 25 between rule 6 and token '+' resolved as reduce.
+Conflict in state 25 between rule 6 and token '-' resolved as reduce.
+Conflict in state 25 between rule 6 and token '*' resolved as shift.
+Conflict in state 25 between rule 6 and token '/' resolved as shift.
+Conflict in state 25 between rule 6 and token '%' resolved as shift.
+Conflict in state 26 between rule 7 and token '|' resolved as reduce.
+Conflict in state 26 between rule 7 and token '&' resolved as reduce.
+Conflict in state 26 between rule 7 and token '+' resolved as reduce.
+Conflict in state 26 between rule 7 and token '-' resolved as reduce.
+Conflict in state 26 between rule 7 and token '*' resolved as reduce.
+Conflict in state 26 between rule 7 and token '/' resolved as reduce.
+Conflict in state 26 between rule 7 and token '%' resolved as reduce.
+Conflict in state 27 between rule 8 and token '|' resolved as reduce.
+Conflict in state 27 between rule 8 and token '&' resolved as reduce.
+Conflict in state 27 between rule 8 and token '+' resolved as reduce.
+Conflict in state 27 between rule 8 and token '-' resolved as reduce.
+Conflict in state 27 between rule 8 and token '*' resolved as reduce.
+Conflict in state 27 between rule 8 and token '/' resolved as reduce.
+Conflict in state 27 between rule 8 and token '%' resolved as reduce.
+Conflict in state 28 between rule 9 and token '|' resolved as reduce.
+Conflict in state 28 between rule 9 and token '&' resolved as reduce.
+Conflict in state 28 between rule 9 and token '+' resolved as reduce.
+Conflict in state 28 between rule 9 and token '-' resolved as reduce.
+Conflict in state 28 between rule 9 and token '*' resolved as reduce.
+Conflict in state 28 between rule 9 and token '/' resolved as reduce.
+Conflict in state 28 between rule 9 and token '%' resolved as reduce.
+
+
+token types:
+ type -1 is $
+ type 37 is '%'
+ type 38 is '&'
+ type 40 is '('
+ type 41 is ')'
+ type 42 is '*'
+ type 43 is '+'
+ type 45 is '-'
+ type 47 is '/'
+ type 61 is '='
+ type 124 is '|'
+ type 256 is error
+ type 258 is DIGIT
+ type 259 is LETTER
+ type 260 is EXIT
+ type 261 is UMINUS
+
+
+state 0
+
+    DIGIT	shift  1
+    LETTER	shift  2
+    EXIT	shift  3
+    '-' 	shift  4
+    '(' 	shift  5
+    expr	shift  6
+    stmt	shift  29
+    number	shift  7
+
+
+
+state 1
+
+    number  ->  DIGIT .   (15)
+
+    $default	reduce  15  (number)
+
+
+
+state 2
+
+    stmt  ->  LETTER . '=' expr   (2)
+    expr  ->  LETTER .   (13)
+
+    '=' 	shift  8
+
+    $default	reduce  13  (expr)
+
+
+
+state 3
+
+    stmt  ->  EXIT .   (3)
+
+    $default	reduce  3  (stmt)
+
+
+
+state 4
+
+    expr  ->  '-' . expr   (12)
+
+    DIGIT	shift  1
+    LETTER	shift  9
+    '-' 	shift  4
+    '(' 	shift  5
+    expr	shift  10
+    number	shift  7
+
+
+
+state 5
+
+    expr  ->  '(' . expr ')'   (4)
+
+    DIGIT	shift  1
+    LETTER	shift  9
+    '-' 	shift  4
+    '(' 	shift  5
+    expr	shift  11
+    number	shift  7
+
+
+
+state 6
+
+    stmt  ->  expr .   (1)
+    expr  ->  expr . '+' expr   (5)
+    expr  ->  expr . '-' expr   (6)
+    expr  ->  expr . '*' expr   (7)
+    expr  ->  expr . '/' expr   (8)
+    expr  ->  expr . '%' expr   (9)
+    expr  ->  expr . '|' expr   (10)
+    expr  ->  expr . '&' expr   (11)
+
+    '|' 	shift  12
+    '&' 	shift  13
+    '+' 	shift  14
+    '-' 	shift  15
+    '*' 	shift  16
+    '/' 	shift  17
+    '%' 	shift  18
+
+    $default	reduce  1  (stmt)
+
+
+
+state 7
+
+    expr  ->  number .   (14)
+    number  ->  number . DIGIT   (16)
+
+    DIGIT	shift  19
+
+    $default	reduce  14  (expr)
+
+
+
+state 8
+
+    stmt  ->  LETTER '=' . expr   (2)
+
+    DIGIT	shift  1
+    LETTER	shift  9
+    '-' 	shift  4
+    '(' 	shift  5
+    expr	shift  20
+    number	shift  7
+
+
+
+state 9
+
+    expr  ->  LETTER .   (13)
+
+    $default	reduce  13  (expr)
+
+
+
+state 10
+
+    expr  ->  expr . '+' expr   (5)
+    expr  ->  expr . '-' expr   (6)
+    expr  ->  expr . '*' expr   (7)
+    expr  ->  expr . '/' expr   (8)
+    expr  ->  expr . '%' expr   (9)
+    expr  ->  expr . '|' expr   (10)
+    expr  ->  expr . '&' expr   (11)
+    expr  ->  '-' expr .   (12)
+
+
+    $default	reduce  12  (expr)
+
+
+
+state 11
+
+    expr  ->  '(' expr . ')'   (4)
+    expr  ->  expr . '+' expr   (5)
+    expr  ->  expr . '-' expr   (6)
+    expr  ->  expr . '*' expr   (7)
+    expr  ->  expr . '/' expr   (8)
+    expr  ->  expr . '%' expr   (9)
+    expr  ->  expr . '|' expr   (10)
+    expr  ->  expr . '&' expr   (11)
+
+    '|' 	shift  12
+    '&' 	shift  13
+    '+' 	shift  14
+    '-' 	shift  15
+    '*' 	shift  16
+    '/' 	shift  17
+    '%' 	shift  18
+    ')' 	shift  21
+
+
+
+state 12
+
+    expr  ->  expr '|' . expr   (10)
+
+    DIGIT	shift  1
+    LETTER	shift  9
+    '-' 	shift  4
+    '(' 	shift  5
+    expr	shift  22
+    number	shift  7
+
+
+
+state 13
+
+    expr  ->  expr '&' . expr   (11)
+
+    DIGIT	shift  1
+    LETTER	shift  9
+    '-' 	shift  4
+    '(' 	shift  5
+    expr	shift  23
+    number	shift  7
+
+
+
+state 14
+
+    expr  ->  expr '+' . expr   (5)
+
+    DIGIT	shift  1
+    LETTER	shift  9
+    '-' 	shift  4
+    '(' 	shift  5
+    expr	shift  24
+    number	shift  7
+
+
+
+state 15
+
+    expr  ->  expr '-' . expr   (6)
+
+    DIGIT	shift  1
+    LETTER	shift  9
+    '-' 	shift  4
+    '(' 	shift  5
+    expr	shift  25
+    number	shift  7
+
+
+
+state 16
+
+    expr  ->  expr '*' . expr   (7)
+
+    DIGIT	shift  1
+    LETTER	shift  9
+    '-' 	shift  4
+    '(' 	shift  5
+    expr	shift  26
+    number	shift  7
+
+
+
+state 17
+
+    expr  ->  expr '/' . expr   (8)
+
+    DIGIT	shift  1
+    LETTER	shift  9
+    '-' 	shift  4
+    '(' 	shift  5
+    expr	shift  27
+    number	shift  7
+
+
+
+state 18
+
+    expr  ->  expr '%' . expr   (9)
+
+    DIGIT	shift  1
+    LETTER	shift  9
+    '-' 	shift  4
+    '(' 	shift  5
+    expr	shift  28
+    number	shift  7
+
+
+
+state 19
+
+    number  ->  number DIGIT .   (16)
+
+    $default	reduce  16  (number)
+
+
+
+state 20
+
+    stmt  ->  LETTER '=' expr .   (2)
+    expr  ->  expr . '+' expr   (5)
+    expr  ->  expr . '-' expr   (6)
+    expr  ->  expr . '*' expr   (7)
+    expr  ->  expr . '/' expr   (8)
+    expr  ->  expr . '%' expr   (9)
+    expr  ->  expr . '|' expr   (10)
+    expr  ->  expr . '&' expr   (11)
+
+    '|' 	shift  12
+    '&' 	shift  13
+    '+' 	shift  14
+    '-' 	shift  15
+    '*' 	shift  16
+    '/' 	shift  17
+    '%' 	shift  18
+
+    $default	reduce  2  (stmt)
+
+
+
+state 21
+
+    expr  ->  '(' expr ')' .   (4)
+
+    $default	reduce  4  (expr)
+
+
+
+state 22
+
+    expr  ->  expr . '+' expr   (5)
+    expr  ->  expr . '-' expr   (6)
+    expr  ->  expr . '*' expr   (7)
+    expr  ->  expr . '/' expr   (8)
+    expr  ->  expr . '%' expr   (9)
+    expr  ->  expr . '|' expr   (10)
+    expr  ->  expr '|' expr .   (10)
+    expr  ->  expr . '&' expr   (11)
+
+    '&' 	shift  13
+    '+' 	shift  14
+    '-' 	shift  15
+    '*' 	shift  16
+    '/' 	shift  17
+    '%' 	shift  18
+
+    $default	reduce  10  (expr)
+
+
+
+state 23
+
+    expr  ->  expr . '+' expr   (5)
+    expr  ->  expr . '-' expr   (6)
+    expr  ->  expr . '*' expr   (7)
+    expr  ->  expr . '/' expr   (8)
+    expr  ->  expr . '%' expr   (9)
+    expr  ->  expr . '|' expr   (10)
+    expr  ->  expr . '&' expr   (11)
+    expr  ->  expr '&' expr .   (11)
+
+    '+' 	shift  14
+    '-' 	shift  15
+    '*' 	shift  16
+    '/' 	shift  17
+    '%' 	shift  18
+
+    $default	reduce  11  (expr)
+
+
+
+state 24
+
+    expr  ->  expr . '+' expr   (5)
+    expr  ->  expr '+' expr .   (5)
+    expr  ->  expr . '-' expr   (6)
+    expr  ->  expr . '*' expr   (7)
+    expr  ->  expr . '/' expr   (8)
+    expr  ->  expr . '%' expr   (9)
+    expr  ->  expr . '|' expr   (10)
+    expr  ->  expr . '&' expr   (11)
+
+    '*' 	shift  16
+    '/' 	shift  17
+    '%' 	shift  18
+
+    $default	reduce  5  (expr)
+
+
+
+state 25
+
+    expr  ->  expr . '+' expr   (5)
+    expr  ->  expr . '-' expr   (6)
+    expr  ->  expr '-' expr .   (6)
+    expr  ->  expr . '*' expr   (7)
+    expr  ->  expr . '/' expr   (8)
+    expr  ->  expr . '%' expr   (9)
+    expr  ->  expr . '|' expr   (10)
+    expr  ->  expr . '&' expr   (11)
+
+    '*' 	shift  16
+    '/' 	shift  17
+    '%' 	shift  18
+
+    $default	reduce  6  (expr)
+
+
+
+state 26
+
+    expr  ->  expr . '+' expr   (5)
+    expr  ->  expr . '-' expr   (6)
+    expr  ->  expr . '*' expr   (7)
+    expr  ->  expr '*' expr .   (7)
+    expr  ->  expr . '/' expr   (8)
+    expr  ->  expr . '%' expr   (9)
+    expr  ->  expr . '|' expr   (10)
+    expr  ->  expr . '&' expr   (11)
+
+
+    $default	reduce  7  (expr)
+
+
+
+state 27
+
+    expr  ->  expr . '+' expr   (5)
+    expr  ->  expr . '-' expr   (6)
+    expr  ->  expr . '*' expr   (7)
+    expr  ->  expr . '/' expr   (8)
+    expr  ->  expr '/' expr .   (8)
+    expr  ->  expr . '%' expr   (9)
+    expr  ->  expr . '|' expr   (10)
+    expr  ->  expr . '&' expr   (11)
+
+
+    $default	reduce  8  (expr)
+
+
+
+state 28
+
+    expr  ->  expr . '+' expr   (5)
+    expr  ->  expr . '-' expr   (6)
+    expr  ->  expr . '*' expr   (7)
+    expr  ->  expr . '/' expr   (8)
+    expr  ->  expr . '%' expr   (9)
+    expr  ->  expr '%' expr .   (9)
+    expr  ->  expr . '|' expr   (10)
+    expr  ->  expr . '&' expr   (11)
+
+
+    $default	reduce  9  (expr)
+
+
+
+state 29
+
+    $   	shift  30
+
+
+
+state 30
+
+    $   	shift  31
+
+
+
+state 31
+
+    NO ACTIONS

@@ -1,0 +1,19 @@
+#!/bin/sh -x
+# remove old link
+rm -v -f config.h
+# symbolic link to config file
+ln -s -v -f config-i386.h config.h
+# remove old link tm
+rm -v -f tm.h
+# symbolic link to tm file
+ln -s -v -f tm-i386v.h tm.h
+# remove old link md
+rm -v -f md
+# symbolic link to md file
+ln -s -v -f i386.md md
+# remove old link output.c
+rm -v -d aux-output.c
+# symbolic link to output.c file
+ln -s -v -f  output-i386.c aux-output.c
+
+sleep 10

@@ -1,0 +1,174 @@
+gcc -g  -c gcc.c
+gcc -g    -c -o obstack.o obstack.c
+gcc -g  -o gccnew gcc.o obstack.o 
+gcc.o(.text+0x1957): In function `pfatal_with_name':
+/root/d/gcc/gcc.c:1365: warning: `sys_nerr' is deprecated; use `strerror' or `strerror_r' instead
+gcc.o(.text+0xdb): In function `choose_temp_base':
+/root/d/gcc/gcc.c:332: warning: the use of `mktemp' is dangerous, better use `mkstemp'
+mv gccnew gcc
+gcc -g    -c -o toplev.o toplev.c
+toplev.c: In function `xrealloc':
+toplev.c:602: warning: initialization makes integer from pointer without a cast
+gcc -g    -c -o version.o version.c
+gcc -g    -c -o parse.tab.o parse.tab.c
+parse.y: In function `init_lex':
+parse.y:1270: warning: conflicting types for built-in function 'malloc'
+parse.y: At top level:
+parse.y:1641: warning: static declaration of 'yylex' follows non-static declaration
+bison.simple:214: warning: previous implicit declaration of 'yylex' was here
+gcc -g    -c -o tree.o tree.c
+gcc -g    -c -o print-tree.o print-tree.c
+gcc -g    -c -o decl.o decl.c
+gcc -g    -c -o typecheck.o typecheck.c
+gcc -g    -c -o stor-layout.o stor-layout.c
+gcc -g    -c -o fold-const.o fold-const.c
+gcc -g    -c -o rtl.o rtl.c
+rtl.c: In function `read_name':
+rtl.c:870: warning: assignment makes integer from pointer without a cast
+gcc -g  -c genflags.c
+genflags.c: In function `xmalloc':
+genflags.c:57: warning: initialization makes integer from pointer without a cast
+genflags.c: In function `fatal':
+genflags.c:80: warning: passing arg 2 of `fprintf' makes pointer from integer without a cast
+gcc -g  -o genflags genflags.o rtl.o obstack.o 
+./genflags md > tmp-insn-flags.h
+./move-if-change tmp-insn-flags.h insn-flags.h
+gcc -g  -c gencodes.c
+gencodes.c: In function `xmalloc':
+gencodes.c:56: warning: initialization makes integer from pointer without a cast
+gencodes.c: In function `fatal':
+gencodes.c:78: warning: passing arg 2 of `fprintf' makes pointer from integer without a cast
+gcc -g  -o gencodes gencodes.o rtl.o obstack.o 
+./gencodes md > tmp-insn-codes.h
+./move-if-change tmp-insn-codes.h insn-codes.h
+gcc -g  -c genconfig.c
+genconfig.c: In function `xmalloc':
+genconfig.c:178: warning: initialization makes integer from pointer without a cast
+genconfig.c: In function `fatal':
+genconfig.c:201: warning: passing arg 2 of `fprintf' makes pointer from integer without a cast
+gcc -g  -o genconfig genconfig.o rtl.o obstack.o 
+./genconfig md > tmp-insn-config.h
+./move-if-change tmp-insn-config.h insn-config.h
+gcc -g    -c -o expr.o expr.c
+expr.c:700: warning: static declaration of 'move_by_pieces_ninsns' follows non-static declaration
+expr.c:625: warning: previous implicit declaration of 'move_by_pieces_ninsns' was here
+gcc -g    -c -o stmt.o stmt.c
+gcc -g    -c -o expmed.o expmed.c
+gcc -g    -c -o explow.o explow.c
+gcc -g    -c -o optabs.o optabs.c
+gcc -g    -c -o varasm.o varasm.c
+gcc -g    -c -o symout.o symout.c
+gcc -g    -c -o dbxout.o dbxout.c
+gcc -g    -c -o emit-rtl.o emit-rtl.c
+gcc -g  -c genemit.c
+genemit.c: In function `xmalloc':
+genemit.c:343: warning: initialization makes integer from pointer without a cast
+genemit.c: In function `fatal':
+genemit.c:366: warning: passing arg 2 of `fprintf' makes pointer from integer without a cast
+gcc -g  -o genemit genemit.o rtl.o obstack.o 
+./genemit md > tmp-insn-emit.c
+./move-if-change tmp-insn-emit.c insn-emit.c
+gcc -g  -c insn-emit.c
+gcc -g    -c -o integrate.o integrate.c
+gcc -g    -c -o jump.o jump.c
+jump.c:796: warning: static declaration of 'simplejump_p' follows non-static declaration
+jump.c:176: warning: previous implicit declaration of 'simplejump_p' was here
+jump.c:813: warning: static declaration of 'condjump_p' follows non-static declaration
+jump.c:369: warning: previous implicit declaration of 'condjump_p' was here
+gcc -g    -c -o cse.o cse.c
+cse.c:1260: warning: static declaration of 'canon_hash' follows non-static declaration
+cse.c:1032: warning: previous implicit declaration of 'canon_hash' was here
+gcc -g    -c -o loop.o loop.c
+loop.c:1285: warning: static declaration of 'consec_sets_invariant_p' follows non-static declaration
+loop.c:414: warning: previous implicit declaration of 'consec_sets_invariant_p' was here
+gcc -g    -c -o flow.o flow.c
+gcc -g    -c -o stupid.o stupid.c
+stupid.c:302: warning: static declaration of 'stupid_find_reg' follows non-static declaration
+stupid.c:255: warning: previous implicit declaration of 'stupid_find_reg' was here
+gcc -g    -c -o combine.o combine.c
+combine.c:328: warning: static declaration of 'try_combine' follows non-static declaration
+combine.c:250: warning: previous implicit declaration of 'try_combine' was here
+gcc -g    -c -o regclass.o regclass.c
+gcc -g    -c -o local-alloc.o local-alloc.c
+local-alloc.c:973: warning: static declaration of 'find_free_reg' follows non-static declaration
+local-alloc.c:491: warning: previous implicit declaration of 'find_free_reg' was here
+gcc -g    -c -o global-alloc.o global-alloc.c
+gcc -g    -c -o reload.o reload.c
+reload.c:1696: warning: static declaration of 'alternative_allows_memconst' follows non-static declaration
+reload.c:1481: warning: previous implicit declaration of 'alternative_allows_memconst' was here
+gcc -g    -c -o reload1.o reload1.c
+gcc -g  -c genpeep.c
+genpeep.c: In function `xmalloc':
+genpeep.c:276: warning: initialization makes integer from pointer without a cast
+genpeep.c: In function `fatal':
+genpeep.c:298: warning: passing arg 2 of `fprintf' makes pointer from integer without a cast
+gcc -g  -o genpeep genpeep.o rtl.o obstack.o 
+./genpeep md > tmp-insn-peep.c
+./move-if-change tmp-insn-peep.c insn-peep.c
+gcc -g  -c insn-peep.c
+gcc -g    -c -o final.o final.c
+gcc -g    -c -o recog.o recog.c
+gcc -g  -c genrecog.c
+genrecog.c: In function `xmalloc':
+genrecog.c:970: warning: initialization makes integer from pointer without a cast
+genrecog.c: In function `fatal':
+genrecog.c:981: warning: passing arg 2 of `fprintf' makes pointer from integer without a cast
+gcc -g  -o genrecog genrecog.o rtl.o obstack.o 
+./genrecog md > tmp-insn-recog.c
+./move-if-change tmp-insn-recog.c insn-recog.c
+gcc -g  -c insn-recog.c
+gcc -g  -c genextract.c
+genextract.c: In function `xmalloc':
+genextract.c:205: warning: initialization makes integer from pointer without a cast
+genextract.c: In function `fatal':
+genextract.c:227: warning: passing arg 2 of `fprintf' makes pointer from integer without a cast
+gcc -g  -o genextract genextract.o rtl.o obstack.o 
+./genextract md > tmp-insn-extract.c
+./move-if-change tmp-insn-extract.c insn-extract.c
+gcc -g  -c insn-extract.c
+gcc -g  -c genoutput.c
+genoutput.c: In function `xmalloc':
+genoutput.c:572: warning: initialization makes integer from pointer without a cast
+genoutput.c: In function `fatal':
+genoutput.c:613: warning: passing arg 2 of `fprintf' makes pointer from integer without a cast
+gcc -g  -o genoutput genoutput.o rtl.o obstack.o 
+./genoutput md > tmp-insn-output.c
+./move-if-change tmp-insn-output.c insn-output.c
+gcc -g  -c insn-output.c
+In file included from insn-output.c:12:
+aux-output.c:624: warning: static declaration of 'output_move_const_single' follows non-static declaration
+aux-output.c:343: warning: previous declaration of 'output_move_const_single' was here
+gcc -g  -o cc1 toplev.o version.o parse.tab.o tree.o print-tree.o decl.o typecheck.o stor-layout.o fold-const.o rtl.o expr.o stmt.o expmed.o explow.o optabs.o varasm.o symout.o dbxout.o emit-rtl.o insn-emit.o integrate.o jump.o cse.o loop.o flow.o stupid.o combine.o regclass.o local-alloc.o global-alloc.o reload.o reload1.o insn-peep.o final.o recog.o insn-recog.o insn-extract.o insn-output.o obstack.o 
+symout.o(.text+0x1c9d): In function `symout_finish':
+/root/d/gcc/symout.c:1095: warning: the `getwd' function is dangerous and should not be used.
+gcc -g    -c -o cccp.o cccp.c
+cccp.c:2104: warning: static declaration of 'expand_to_temp_buffer' follows non-static declaration
+cccp.c:503: warning: previous declaration of 'expand_to_temp_buffer' was here
+cccp.c:3059: warning: static declaration of 'compare_defs' follows non-static declaration
+cccp.c:3029: warning: previous implicit declaration of 'compare_defs' was here
+cccp.c:3190: warning: static declaration of 'collect_expansion' follows non-static declaration
+cccp.c:505: warning: previous declaration of 'collect_expansion' was here
+cccp.c:3688: warning: static declaration of 'eval_if_expression' follows non-static declaration
+cccp.c:3631: warning: previous implicit declaration of 'eval_if_expression' was here
+cccp.c:3754: warning: static declaration of 'conditional_skip' follows non-static declaration
+cccp.c:3632: warning: previous implicit declaration of 'conditional_skip' was here
+cccp.c:3787: warning: static declaration of 'skip_if_group' follows non-static declaration
+cccp.c:1315: warning: previous implicit declaration of 'skip_if_group' was here
+cccp.c:4244: warning: static declaration of 'output_line_command' follows non-static declaration
+cccp.c:1002: warning: previous implicit declaration of 'output_line_command' was here
+cccp.c: In function `dump_all_macros':
+cccp.c:5275: warning: `return' with a value, in function returning void
+cccp.c: In function `xmalloc':
+cccp.c:5592: warning: conflicting types for built-in function 'malloc'
+gcc -g    -c -o cexp.o cexp.c
+cexp.y:295:1: warning: "NULL" redefined
+In file included from /usr/include/_G_config.h:14,
+                 from /usr/include/libio.h:32,
+                 from /usr/include/stdio.h:72,
+                 from cexp.y:149:
+/usr/local/lib/gcc/i686-pc-linux-gnu/3.4.2/include/stddef.h:402:1: warning: this is the location of the previous definition
+cexp.y:427: warning: static declaration of 'parse_escape' follows non-static declaration
+cexp.y:344: warning: previous implicit declaration of 'parse_escape' was here
+gcc -g  -o cccp cccp.o cexp.o version.o 
+rm -f cpp
+ln cccp cpp

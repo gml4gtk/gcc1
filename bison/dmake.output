@@ -1,0 +1,26 @@
+gcc -g -Wall   -c -o LR0.o LR0.c
+gcc -g -Wall   -c -o allocate.o allocate.c
+gcc -g -Wall   -c -o closure.o closure.c
+gcc -g -Wall   -c -o conflicts.o conflicts.c
+gcc -g -Wall   -c -o derives.o derives.c
+gcc -c -g -Wall -DXPFILE=\"bison1.simple\" -DXPFILE1=\"bison1.hairy\" files.c
+files.c: In function ‘stringappend’:
+files.c:85: warning: suggest parentheses around assignment used as truth value
+gcc -g -Wall   -c -o getargs.o getargs.c
+gcc -g -Wall   -c -o gram.o gram.c
+gcc -g -Wall   -c -o lalr.o lalr.c
+lalr.c: In function ‘initialize_LA’:
+lalr.c:251: warning: suggest parentheses around assignment used as truth value
+gcc -g -Wall   -c -o lex.o lex.c
+gcc -g -Wall   -c -o main.o main.c
+gcc -g -Wall   -c -o nullable.o nullable.c
+gcc -g -Wall   -c -o output.o output.c
+gcc -g -Wall   -c -o print.o print.c
+gcc -g -Wall   -c -o reader.o reader.c
+reader.c: In function ‘copy_guard’:
+reader.c:817: warning: suggest parentheses around && within ||
+gcc -g -Wall   -c -o symtab.o symtab.c
+gcc -g -Wall   -c -o warshall.o warshall.c
+gcc  -o bison1 LR0.o allocate.o closure.o conflicts.o derives.o files.o getargs.o gram.o lalr.o lex.o main.o nullable.o output.o print.o reader.o symtab.o warshall.o
+files.o: In function `openfiles':
+/home/twlevo/oldbison/bison-1.00-recompiled/files.c:173: warning: the use of `mktemp' is dangerous, better use `mkstemp'

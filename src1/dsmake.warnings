@@ -1,0 +1,305 @@
+gcc.c:519:7: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+obstack.h:317:7: warning: implicit declaration of function ‘_obstack_newchunk’; did you mean ‘obstack_blank’? [-Wimplicit-function-declaration]
+obstack.h:348:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+obstack.h:348:8: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+obstack.h:348:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+obstack.h:348:8: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+obstack.h:272:3: warning: implicit declaration of function ‘_obstack_begin’; did you mean ‘obstack_begin’? [-Wimplicit-function-declaration]
+obstack.c:122:28: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+obstack.h:348:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+obstack.h:348:8: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+obstack.h:348:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+obstack.h:348:8: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+obstack.h:348:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+obstack.h:348:8: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+obstack.h:348:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+obstack.h:348:8: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+/home/gold/misc/src/d/d/gcc/gcc.c:1365: warning: `sys_nerr' is deprecated; use `strerror' or `strerror_r' instead
+/home/gold/misc/src/d/d/gcc/gcc.c:332: warning: the use of `mktemp' is dangerous, better use `mkstemp' or `mkdtemp'
+toplev.c:576:1: warning: type of ‘s’ defaults to ‘int’ [-Wimplicit-int]
+toplev.c:587:24: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+toplev.c:602:16: warning: initialization of ‘int’ from ‘void *’ makes integer from pointer without a cast [-Wint-conversion]
+toplev.c:654:31: warning: implicit declaration of function ‘strlen’ [-Wimplicit-function-declaration]
+toplev.c:654:31: warning: incompatible implicit declaration of built-in function ‘strlen’
+toplev.c:679:3: warning: implicit declaration of function ‘init_emit_once’; did you mean ‘init_tree’? [-Wimplicit-function-declaration]
+toplev.c:685:33: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+toplev.c:686:7: warning: implicit declaration of function ‘strcpy’ [-Wimplicit-function-declaration]
+toplev.c:686:7: warning: incompatible implicit declaration of built-in function ‘strcpy’
+toplev.c:687:7: warning: implicit declaration of function ‘strcat’ [-Wimplicit-function-declaration]
+toplev.c:687:7: warning: incompatible implicit declaration of built-in function ‘strcat’
+toplev.c:698:33: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+toplev.c:699:7: warning: incompatible implicit declaration of built-in function ‘strcpy’
+toplev.c:700:7: warning: incompatible implicit declaration of built-in function ‘strcat’
+toplev.c:711:33: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+toplev.c:712:7: warning: incompatible implicit declaration of built-in function ‘strcpy’
+toplev.c:713:7: warning: incompatible implicit declaration of built-in function ‘strcat’
+toplev.c:724:33: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+toplev.c:725:7: warning: incompatible implicit declaration of built-in function ‘strcpy’
+toplev.c:726:7: warning: incompatible implicit declaration of built-in function ‘strcat’
+toplev.c:737:33: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+toplev.c:738:7: warning: incompatible implicit declaration of built-in function ‘strcpy’
+toplev.c:739:7: warning: incompatible implicit declaration of built-in function ‘strcat’
+toplev.c:750:33: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+toplev.c:751:7: warning: incompatible implicit declaration of built-in function ‘strcpy’
+toplev.c:752:7: warning: incompatible implicit declaration of built-in function ‘strcat’
+toplev.c:763:33: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+toplev.c:764:7: warning: incompatible implicit declaration of built-in function ‘strcpy’
+toplev.c:765:7: warning: incompatible implicit declaration of built-in function ‘strcat’
+toplev.c:776:33: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+toplev.c:777:7: warning: incompatible implicit declaration of built-in function ‘strcpy’
+toplev.c:778:7: warning: incompatible implicit declaration of built-in function ‘strcat’
+toplev.c:789:33: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+toplev.c:790:7: warning: incompatible implicit declaration of built-in function ‘strcpy’
+toplev.c:791:7: warning: incompatible implicit declaration of built-in function ‘strcat’
+toplev.c:802:31: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+toplev.c:804:5: warning: incompatible implicit declaration of built-in function ‘strcpy’
+toplev.c:805:21: warning: implicit declaration of function ‘strcmp’ [-Wimplicit-function-declaration]
+toplev.c:813:5: warning: incompatible implicit declaration of built-in function ‘strcat’
+toplev.c:831:3: warning: implicit declaration of function ‘check_newline’ [-Wimplicit-function-declaration]
+toplev.c:835:33: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+toplev.c:837:7: warning: incompatible implicit declaration of built-in function ‘strcpy’
+toplev.c:846:7: warning: incompatible implicit declaration of built-in function ‘strcat’
+toplev.c:851:7: warning: implicit declaration of function ‘symout_init’; did you mean ‘digest_init’? [-Wimplicit-function-declaration]
+toplev.c:858:7: warning: implicit declaration of function ‘dbxout_init’; did you mean ‘digest_init’? [-Wimplicit-function-declaration]
+toplev.c:862:3: warning: implicit declaration of function ‘init_final’; did you mean ‘init_rtl’? [-Wimplicit-function-declaration]
+toplev.c:866:3: warning: implicit declaration of function ‘yyparse’ [-Wimplicit-function-declaration]
+toplev.c:888:6: warning: implicit declaration of function ‘output_inline_function’; did you mean ‘announce_function’? [-Wimplicit-function-declaration]
+toplev.c:897:7: warning: implicit declaration of function ‘dbxout_tags’ [-Wimplicit-function-declaration]
+toplev.c:897:33: warning: implicit declaration of function ‘dbxout_types’; did you mean ‘layout_type’? [-Wimplicit-function-declaration]
+toplev.c:897:47: warning: implicit declaration of function ‘get_permanent_types’; did you mean ‘get_parm_types’? [-Wimplicit-function-declaration]
+toplev.c:907:7: warning: implicit declaration of function ‘symout_types’; did you mean ‘layout_type’? [-Wimplicit-function-declaration]
+toplev.c:909:7: warning: implicit declaration of function ‘symout_top_blocks’ [-Wimplicit-function-declaration]
+toplev.c:910:7: warning: implicit declaration of function ‘symout_finish’ [-Wimplicit-function-declaration]
+toplev.c:936:7: warning: implicit declaration of function ‘dump_combine_total_stats’ [-Wimplicit-function-declaration]
+toplev.c:999:7: warning: implicit declaration of function ‘assemble_variable’ [-Wimplicit-function-declaration]
+toplev.c:1012:20: warning: implicit declaration of function ‘get_temporary_types’; did you mean ‘get_parm_types’? [-Wimplicit-function-declaration]
+toplev.c:1052:21: warning: implicit declaration of function ‘save_for_inline’; did you mean ‘type_for_size’? [-Wimplicit-function-declaration]
+toplev.c:1070:4: warning: implicit declaration of function ‘print_rtl’; did you mean ‘init_rtl’? [-Wimplicit-function-declaration]
+toplev.c:1090:3: warning: implicit declaration of function ‘unshare_all_rtl’ [-Wimplicit-function-declaration]
+toplev.c:1100:27: warning: implicit declaration of function ‘jump_optimize’ [-Wimplicit-function-declaration]
+toplev.c:1120:26: warning: implicit declaration of function ‘reg_scan’ [-Wimplicit-function-declaration]
+toplev.c:1120:43: warning: implicit declaration of function ‘max_reg_num’ [-Wimplicit-function-declaration]
+toplev.c:1121:32: warning: implicit declaration of function ‘cse_main’; did you mean ‘ctermid’? [-Wimplicit-function-declaration]
+toplev.c:1156:9: warning: implicit declaration of function ‘loop_optimize’ [-Wimplicit-function-declaration]
+toplev.c:1175:3: warning: implicit declaration of function ‘regclass_init’; did you mean ‘get_last_insn’? [-Wimplicit-function-declaration]
+toplev.c:1190:9: warning: implicit declaration of function ‘regclass’; did you mean ‘tree_last’? [-Wimplicit-function-declaration]
+toplev.c:1191:9: warning: implicit declaration of function ‘stupid_life_analysis’ [-Wimplicit-function-declaration]
+toplev.c:1200:27: warning: implicit declaration of function ‘flow_analysis’ [-Wimplicit-function-declaration]
+toplev.c:1203:2: warning: implicit declaration of function ‘uninitialized_vars_warning’ [-Wimplicit-function-declaration]
+toplev.c:1216:28: warning: implicit declaration of function ‘combine_instructions’ [-Wimplicit-function-declaration]
+toplev.c:1225:7: warning: implicit declaration of function ‘dump_combine_stats’ [-Wimplicit-function-declaration]
+toplev.c:1234:41: warning: implicit declaration of function ‘local_alloc’; did you mean ‘dump_local_alloc’? [-Wimplicit-function-declaration]
+toplev.c:1262:5: warning: implicit declaration of function ‘global_alloc’; did you mean ‘oballoc’? [-Wimplicit-function-declaration]
+toplev.c:1264:5: warning: implicit declaration of function ‘reload’; did you mean ‘rewind’? [-Wimplicit-function-declaration]
+toplev.c:1269:7: warning: implicit declaration of function ‘dump_global_regs’; did you mean ‘dump_local_alloc’? [-Wimplicit-function-declaration]
+toplev.c:1299:5: warning: implicit declaration of function ‘assemble_function’; did you mean ‘announce_function’? [-Wimplicit-function-declaration]
+toplev.c:1300:5: warning: implicit declaration of function ‘final_start_function’; did you mean ‘expand_start_function’? [-Wimplicit-function-declaration]
+toplev.c:1302:5: warning: implicit declaration of function ‘final’; did you mean ‘fatal’? [-Wimplicit-function-declaration]
+toplev.c:1304:5: warning: implicit declaration of function ‘final_end_function’; did you mean ‘expand_end_function’? [-Wimplicit-function-declaration]
+toplev.c:1317:11: warning: implicit declaration of function ‘symout_function’; did you mean ‘start_function’? [-Wimplicit-function-declaration]
+toplev.c:1326:27: warning: implicit declaration of function ‘dbxout_function’; did you mean ‘start_function’? [-Wimplicit-function-declaration]
+toplev.c:1499:18: warning: implicit declaration of function ‘strncmp’ [-Wimplicit-function-declaration]
+toplev.c:1501:5: warning: implicit declaration of function ‘fix_register’; did you mean ‘find_reg_note’? [-Wimplicit-function-declaration]
+toplev.c:1632:31: warning: implicit declaration of function ‘sbrk’ [-Wimplicit-function-declaration]
+toplev.c:1632:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+toplev.c:1633:43: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+toplev.c:1633:55: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+bison.simple:175:24: warning: implicit declaration of function ‘alloca’ [-Wimplicit-function-declaration]
+bison.simple:175:24: warning: incompatible implicit declaration of built-in function ‘alloca’
+bison.simple:176:7: warning: implicit declaration of function ‘bcopy’ [-Wimplicit-function-declaration]
+bison.simple:176:7: warning: incompatible implicit declaration of built-in function ‘bcopy’
+bison.simple:117:16: warning: implicit declaration of function ‘yylex’ [-Wimplicit-function-declaration]
+parse.y:181:7: warning: implicit declaration of function ‘warning’ [-Wimplicit-function-declaration]
+parse.y:183:5: warning: implicit declaration of function ‘assemble_asm’ [-Wimplicit-function-declaration]
+parse.y:189:7: warning: implicit declaration of function ‘error’; did you mean ‘perror’? [-Wimplicit-function-declaration]
+parse.y:199:3: warning: implicit declaration of function ‘shadow_tag’ [-Wimplicit-function-declaration]
+parse.y:292:23: warning: implicit declaration of function ‘complete_array_type’; did you mean ‘build_array_type’? [-Wimplicit-function-declaration]
+parse.y:294:4: warning: implicit declaration of function ‘abort’ [-Wimplicit-function-declaration]
+parse.y:294:4: warning: incompatible implicit declaration of built-in function ‘abort’
+parse.y:382:5: warning: implicit declaration of function ‘expand_start_stmt_expr’; did you mean ‘expand_start_delayed_expr’? [-Wimplicit-function-declaration]
+parse.y:387:5: warning: implicit declaration of function ‘expand_end_stmt_expr’; did you mean ‘expand_end_delayed_expr’? [-Wimplicit-function-declaration]
+parse.y:425:19: warning: implicit declaration of function ‘suspend_momentary’ [-Wimplicit-function-declaration]
+parse.y:430:3: warning: implicit declaration of function ‘resume_momentary’ [-Wimplicit-function-declaration]
+parse.y:823:5: warning: implicit declaration of function ‘push_momentary’ [-Wimplicit-function-declaration]
+parse.y:831:5: warning: implicit declaration of function ‘pop_momentary’ [-Wimplicit-function-declaration]
+parse.y:844:3: warning: implicit declaration of function ‘emit_note’ [-Wimplicit-function-declaration]
+parse.y:845:24: warning: implicit declaration of function ‘truthvalue_conversion’; did you mean ‘default_conversion’? [-Wimplicit-function-declaration]
+parse.y:854:5: warning: implicit declaration of function ‘clear_momentary’ [-Wimplicit-function-declaration]
+parse.y:956:5: warning: implicit declaration of function ‘c_expand_return’; did you mean ‘expand_return’? [-Wimplicit-function-declaration]
+parse.y:972:5: warning: implicit declaration of function ‘c_expand_asm_operands’; did you mean ‘c_expand_start_case’? [-Wimplicit-function-declaration]
+parse.y:1063:3: warning: implicit declaration of function ‘push_parm_decl’; did you mean ‘start_decl’? [-Wimplicit-function-declaration]
+parse.y:1156:8: warning: incompatible implicit declaration of built-in function ‘bcopy’
+parse.y:1200:8: warning: type defaults to ‘int’ in declaration of ‘dollar_seen’ [-Wimplicit-int]
+parse.y:1270:16: warning: conflicting types for built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+parse.y:1395:27: warning: implicit declaration of function ‘realloc’ [-Wimplicit-function-declaration]
+parse.y:1395:27: warning: incompatible implicit declaration of built-in function ‘realloc’
+parse.y:1397:5: warning: implicit declaration of function ‘fatal’ [-Wimplicit-function-declaration]
+parse.y:1516:4: warning: implicit declaration of function ‘strcpy’ [-Wimplicit-function-declaration]
+parse.y:1516:4: warning: incompatible implicit declaration of built-in function ‘strcpy’
+parse.y:1725:7: warning: implicit declaration of function ‘strcmp’ [-Wimplicit-function-declaration]
+parse.y:2017:6: warning: implicit declaration of function ‘int_fits_type_p’ [-Wimplicit-function-declaration]
+parse.y:2116:29: warning: incompatible implicit declaration of built-in function ‘alloca’
+obstack.h:272:3: warning: implicit declaration of function ‘_obstack_begin’; did you mean ‘obstack_begin’? [-Wimplicit-function-declaration]
+obstack.h:325:7: warning: implicit declaration of function ‘_obstack_newchunk’; did you mean ‘obstack_blank’? [-Wimplicit-function-declaration]
+obstack.h:348:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+obstack.h:348:8: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+obstack.h:348:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+obstack.h:348:8: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+obstack.h:348:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+obstack.h:348:8: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+tree.c:159:3: warning: implicit declaration of function ‘bzero’ [-Wimplicit-function-declaration]
+tree.c:159:3: warning: incompatible implicit declaration of built-in function ‘bzero’
+obstack.h:348:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+obstack.h:348:8: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+obstack.h:348:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+obstack.h:348:8: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+obstack.h:348:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+obstack.h:348:8: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+obstack.h:348:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+obstack.h:348:8: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+obstack.h:348:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+obstack.h:348:8: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+obstack.h:348:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+obstack.h:348:8: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+tree.c:512:3: warning: implicit declaration of function ‘strcmp’ [-Wimplicit-function-declaration]
+obstack.h:309:4: warning: implicit declaration of function ‘bcopy’ [-Wimplicit-function-declaration]
+obstack.h:309:4: warning: incompatible implicit declaration of built-in function ‘bcopy’
+obstack.h:348:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+obstack.h:348:8: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+obstack.h:309:4: warning: incompatible implicit declaration of built-in function ‘bcopy’
+obstack.h:348:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+obstack.h:348:8: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+tree.c:696:18: warning: implicit declaration of function ‘abort’ [-Wimplicit-function-declaration]
+tree.c:696:18: warning: incompatible implicit declaration of built-in function ‘abort’
+tree.c:795:7: warning: implicit declaration of function ‘incomplete_type_error’ [-Wimplicit-function-declaration]
+tree.c:859:7: warning: implicit declaration of function ‘language_lvalue_valid’ [-Wimplicit-function-declaration]
+tree.c:890:5: warning: implicit declaration of function ‘error’; did you mean ‘perror’? [-Wimplicit-function-declaration]
+tree.c:1339:9: warning: implicit declaration of function ‘tree_int_cst_equal’ [-Wimplicit-function-declaration]
+tree.c:1347:6: warning: implicit declaration of function ‘type_list_equal’ [-Wimplicit-function-declaration]
+print-tree.c:67:22: warning: implicit declaration of function ‘alloca’ [-Wimplicit-function-declaration]
+print-tree.c:67:22: warning: incompatible implicit declaration of built-in function ‘alloca’
+print-tree.c:68:3: warning: implicit declaration of function ‘bzero’ [-Wimplicit-function-declaration]
+print-tree.c:68:3: warning: incompatible implicit declaration of built-in function ‘bzero’
+print-tree.c:284:20: warning: implicit declaration of function ‘strlen’ [-Wimplicit-function-declaration]
+print-tree.c:284:20: warning: incompatible implicit declaration of built-in function ‘strlen’
+print-tree.c:307:20: warning: incompatible implicit declaration of built-in function ‘strlen’
+print-tree.c:339:8: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+print-tree.c:352:11: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+print-tree.c:493:12: warning: implicit declaration of function ‘abort’ [-Wimplicit-function-declaration]
+print-tree.c:493:12: warning: incompatible implicit declaration of built-in function ‘abort’
+print-tree.c:498:7: warning: incompatible implicit declaration of built-in function ‘abort’
+decl.c:265:35: warning: implicit declaration of function ‘xmalloc’; did you mean ‘oballoc’? [-Wimplicit-function-declaration]
+decl.c:265:10: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+decl.c:285:4: warning: implicit declaration of function ‘abort’ [-Wimplicit-function-declaration]
+decl.c:285:4: warning: incompatible implicit declaration of built-in function ‘abort’
+decl.c:425:8: warning: implicit declaration of function ‘error’; did you mean ‘yyerror’? [-Wimplicit-function-declaration]
+decl.c:508:21: warning: implicit declaration of function ‘comptypes’; did you mean ‘commontype’? [-Wimplicit-function-declaration]
+decl.c:513:7: warning: implicit declaration of function ‘error_with_decl’ [-Wimplicit-function-declaration]
+decl.c:597:7: warning: implicit declaration of function ‘bcopy’ [-Wimplicit-function-declaration]
+decl.c:597:7: warning: incompatible implicit declaration of built-in function ‘bcopy’
+decl.c:656:8: warning: implicit declaration of function ‘warning’ [-Wimplicit-function-declaration]
+decl.c:719:7: warning: implicit declaration of function ‘end_temporary_allocation’ [-Wimplicit-function-declaration]
+decl.c:730:3: warning: implicit declaration of function ‘rest_of_decl_compilation’ [-Wimplicit-function-declaration]
+decl.c:743:7: warning: implicit declaration of function ‘temporary_allocation’ [-Wimplicit-function-declaration]
+decl.c:1223:3: warning: implicit declaration of function ‘make_function_rtl’; did you mean ‘start_function’? [-Wimplicit-function-declaration]
+decl.c:1437:4: warning: implicit declaration of function ‘complete_array_type’; did you mean ‘build_array_type’? [-Wimplicit-function-declaration]
+decl.c:1509:8: warning: implicit declaration of function ‘expand_decl’; did you mean ‘expand_asm’? [-Wimplicit-function-declaration]
+decl.c:1518:7: warning: implicit declaration of function ‘permanent_allocation’ [-Wimplicit-function-declaration]
+decl.c:1665:6: warning: incompatible implicit declaration of built-in function ‘abort’
+decl.c:2123:2: warning: incompatible implicit declaration of built-in function ‘abort’
+decl.c:2221:3: warning: implicit declaration of function ‘incomplete_type_error’ [-Wimplicit-function-declaration]
+decl.c:2290:11: warning: implicit declaration of function ‘strcmp’ [-Wimplicit-function-declaration]
+decl.c:2313:6: warning: implicit declaration of function ‘warning_with_decl’; did you mean ‘finish_decl’? [-Wimplicit-function-declaration]
+decl.c:2473:1: warning: type of ‘code’ defaults to ‘int’ [-Wimplicit-int]
+decl.c:2564:9: warning: implicit declaration of function ‘suspend_momentary’ [-Wimplicit-function-declaration]
+decl.c:2781:3: warning: implicit declaration of function ‘resume_momentary’ [-Wimplicit-function-declaration]
+decl.c:2952:3: warning: implicit declaration of function ‘announce_function’; did you mean ‘finish_function’? [-Wimplicit-function-declaration]
+decl.c:3245:3: warning: implicit declaration of function ‘expand_function_start’; did you mean ‘build_function_call’? [-Wimplicit-function-declaration]
+decl.c:3273:3: warning: implicit declaration of function ‘expand_function_end’; did you mean ‘expand_end_function’? [-Wimplicit-function-declaration]
+decl.c:3282:3: warning: implicit declaration of function ‘rest_of_compilation’ [-Wimplicit-function-declaration]
+typecheck.c:107:5: warning: implicit declaration of function ‘error’; did you mean ‘perror’? [-Wimplicit-function-declaration]
+typecheck.c:142:4: warning: implicit declaration of function ‘abort’ [-Wimplicit-function-declaration]
+typecheck.c:142:4: warning: incompatible implicit declaration of built-in function ‘abort’
+typecheck.c:413:12: warning: implicit declaration of function ‘compparms1’; did you mean ‘compparms’? [-Wimplicit-function-declaration]
+typecheck.c:543:3: warning: incompatible implicit declaration of built-in function ‘abort’
+typecheck.c:555:2: warning: implicit declaration of function ‘warning’ [-Wimplicit-function-declaration]
+typecheck.c:652:12: warning: implicit declaration of function ‘lvalue_p’ [-Wimplicit-function-declaration]
+typecheck.c:1368:10: warning: implicit declaration of function ‘int_fits_type_p’ [-Wimplicit-function-declaration]
+typecheck.c:1575:16: warning: implicit declaration of function ‘exact_log2’ [-Wimplicit-function-declaration]
+typecheck.c:2265:3: warning: implicit declaration of function ‘strcpy’ [-Wimplicit-function-declaration]
+typecheck.c:2265:3: warning: incompatible implicit declaration of built-in function ‘strcpy’
+typecheck.c:2273:4: warning: implicit declaration of function ‘strcat’ [-Wimplicit-function-declaration]
+typecheck.c:2273:4: warning: incompatible implicit declaration of built-in function ‘strcat’
+typecheck.c:2279:7: warning: incompatible implicit declaration of built-in function ‘strcat’
+typecheck.c:2361:2: warning: implicit declaration of function ‘put_var_into_stack’ [-Wimplicit-function-declaration]
+typecheck.c:3227:31: warning: implicit declaration of function ‘alloca’ [-Wimplicit-function-declaration]
+typecheck.c:3227:31: warning: incompatible implicit declaration of built-in function ‘alloca’
+typecheck.c:3237:3: warning: implicit declaration of function ‘expand_asm_operands’; did you mean ‘c_expand_asm_operands’? [-Wimplicit-function-declaration]
+typecheck.c:3242:7: warning: implicit declaration of function ‘expand_expr’; did you mean ‘expand_return’? [-Wimplicit-function-declaration]
+stor-layout.c:202:7: warning: implicit declaration of function ‘tree_int_cst_equal’ [-Wimplicit-function-declaration]
+stor-layout.c:261:5: warning: implicit declaration of function ‘abort’ [-Wimplicit-function-declaration]
+stor-layout.c:261:5: warning: incompatible implicit declaration of built-in function ‘abort’
+stor-layout.c:269:5: warning: incompatible implicit declaration of built-in function ‘abort’
+stor-layout.c:286:2: warning: incompatible implicit declaration of built-in function ‘abort’
+stor-layout.c:289:2: warning: incompatible implicit declaration of built-in function ‘abort’
+stor-layout.c:541:5: warning: incompatible implicit declaration of built-in function ‘abort’
+stor-layout.c:549:10: warning: implicit declaration of function ‘suspend_momentary’ [-Wimplicit-function-declaration]
+stor-layout.c:581:4: warning: incompatible implicit declaration of built-in function ‘abort’
+stor-layout.c:613:4: warning: incompatible implicit declaration of built-in function ‘abort’
+stor-layout.c:662:7: warning: incompatible implicit declaration of built-in function ‘abort’
+stor-layout.c:665:3: warning: implicit declaration of function ‘resume_momentary’ [-Wimplicit-function-declaration]
+fold-const.c:210:3: warning: implicit declaration of function ‘bzero’ [-Wimplicit-function-declaration]
+fold-const.c:210:3: warning: incompatible implicit declaration of built-in function ‘bzero’
+fold-const.c:401:5: warning: implicit declaration of function ‘error’; did you mean ‘perror’? [-Wimplicit-function-declaration]
+fold-const.c:437:3: warning: incompatible implicit declaration of built-in function ‘bzero’
+fold-const.c:628:7: warning: implicit declaration of function ‘abort’ [-Wimplicit-function-declaration]
+fold-const.c:628:7: warning: incompatible implicit declaration of built-in function ‘abort’
+fold-const.c:833:4: warning: incompatible implicit declaration of built-in function ‘abort’
+fold-const.c:879:4: warning: incompatible implicit declaration of built-in function ‘abort’
+fold-const.c:933:4: warning: incompatible implicit declaration of built-in function ‘abort’
+fold-const.c:1431:8: warning: implicit declaration of function ‘tree_int_cst_lt’ [-Wimplicit-function-declaration]
+obstack.h:325:7: warning: implicit declaration of function ‘_obstack_newchunk’; did you mean ‘obstack_blank’? [-Wimplicit-function-declaration]
+obstack.h:348:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+obstack.h:348:8: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+obstack.h:348:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+obstack.h:348:8: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+rtl.c:385:33: warning: implicit declaration of function ‘rtx_equal_p’; did you mean ‘rtx_varies_p’? [-Wimplicit-function-declaration]
+rtl.c:481:8: warning: implicit declaration of function ‘strcmp’ [-Wimplicit-function-declaration]
+rtl.c:492:4: warning: implicit declaration of function ‘abort’ [-Wimplicit-function-declaration]
+rtl.c:492:4: warning: incompatible implicit declaration of built-in function ‘abort’
+rtl.c:736:2: warning: incompatible implicit declaration of built-in function ‘abort’
+rtl.c:801:3: warning: incompatible implicit declaration of built-in function ‘abort’
+rtl.c:870:6: warning: assignment to ‘char’ from ‘void *’ makes integer from pointer without a cast [-Wint-conversion]
+rtl.c:981:3: warning: implicit declaration of function ‘alloca’ [-Wimplicit-function-declaration]
+rtl.c:981:3: warning: incompatible implicit declaration of built-in function ‘alloca’
+rtl.c:1019:16: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+rtl.c:1027:16: warning: implicit declaration of function ‘xrealloc’; did you mean ‘xmalloc’? [-Wimplicit-function-declaration]
+rtl.c:1027:7: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+rtl.c:1037:9: warning: implicit declaration of function ‘strcpy’ [-Wimplicit-function-declaration]
+rtl.c:1037:9: warning: incompatible implicit declaration of built-in function ‘strcpy’
+rtl.c:1047:16: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+rtl.c:1061:12: warning: implicit declaration of function ‘atoi’ [-Wimplicit-function-declaration]
+rtl.c:1070:2: warning: incompatible implicit declaration of built-in function ‘abort’
+rtl.c:1089:21: warning: implicit declaration of function ‘strlen’ [-Wimplicit-function-declaration]
+rtl.c:1089:21: warning: incompatible implicit declaration of built-in function ‘strlen’
+genflags.c:46:7: warning: implicit declaration of function ‘strlen’ [-Wimplicit-function-declaration]
+genflags.c:46:7: warning: incompatible implicit declaration of built-in function ‘strlen’
+genflags.c:50:4: warning: incompatible implicit declaration of built-in function ‘strlen’
+genflags.c:55:1: warning: type of ‘size’ defaults to ‘int’ [-Wimplicit-int]
+genflags.c:57:22: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+genflags.c:57:22: warning: incompatible implicit declaration of built-in function ‘malloc’
+genflags.c:57:22: warning: initialization of ‘int’ from ‘void *’ makes integer from pointer without a cast [-Wint-conversion]
+genflags.c:70:16: warning: implicit declaration of function ‘realloc’ [-Wimplicit-function-declaration]
+genflags.c:70:16: warning: incompatible implicit declaration of built-in function ‘realloc’
+genflags.c:70:16: warning: initialization of ‘int’ from ‘void *’ makes integer from pointer without a cast [-Wint-conversion]
+genflags.c:77:1: warning: type of ‘s’ defaults to ‘int’ [-Wimplicit-int]
+genflags.c:77:1: warning: type of ‘a1’ defaults to ‘int’ [-Wimplicit-int]
+genflags.c:77:1: warning: type of ‘a2’ defaults to ‘int’ [-Wimplicit-int]
+genflags.c:80:20: warning: passing argument 2 of ‘fprintf’ makes pointer from integer without a cast [-Wint-conversion]
+genflags.c:82:3: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+genflags.c:82:3: warning: incompatible implicit declaration of built-in function ‘exit’
+obstack.h:272:3: warning: implicit declaration of function ‘_obstack_begin’; did you mean ‘obstack_begin’? [-Wimplicit-function-declaration]
+genflags.c:104:7: warning: incompatible implicit declaration of built-in function ‘exit’
+genflags.c:107:3: warning: implicit declaration of function ‘init_rtl’ [-Wimplicit-function-declaration]
+genflags.c:116:11: warning: implicit declaration of function ‘read_skip_spaces’ [-Wimplicit-function-declaration]
+genflags.c:127:3: warning: incompatible implicit declaration of built-in function ‘exit’

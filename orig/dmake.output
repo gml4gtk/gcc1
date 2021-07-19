@@ -1,0 +1,3 @@
+cc -g -c gcc.c
+make: cc: Command not found
+make: *** [gcc.o] Error 127

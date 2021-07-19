@@ -1,0 +1,19 @@
+bison-1.00 recompiled and changed such that is runs with gcc-4.3.2
+
+just type 'make' and a bison1 executable is compiled.
+path for the skeletons given to file.c is fixed to
+this dir to prevent conflicts with newer bison installed.
+'make install' is intentionally turned off, see makefile.
+
+bison -d option generates a .tab.h output file
+bison -v option generates a calc.output file
+bison -y option generates y.tab.c and y.tab.h like yacc does
+bison -o outputfile generated output to another file
+
+test to run calc.y:
+./bison1 calc.y
+gcc calc.tab.c
+./a.out
+3+3
+6
+ctrl-d
