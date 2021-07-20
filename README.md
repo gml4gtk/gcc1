@@ -26,6 +26,8 @@ See also this blog article: "Building and using GCC 0.9 aka the first public ver
 https://virtuallyfun.com/wordpress/2016/12/01/building-using-gcc-0-90-aka-first-public-version/  
   
 This also can be used as a protoype for another cpu or system or even generate wasm assembly  
+And it is more usable to re-compile older GCC version adding new features  
+then to write the yet-another-crappy-compiler as almost other programmers do  
   
 Todo:  
 To improve, fix more issues and bugs, and a autoconf version  
